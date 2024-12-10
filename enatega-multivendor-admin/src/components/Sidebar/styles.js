@@ -3,7 +3,8 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles(theme => ({
   rowDisplay: { display: 'flex', flexDirection: 'row' },
   logo: {
-    marginLeft: -10
+    marginLeft: -10,
+    height: '120px',
   },
   sidebarContainer: {
     backgroundColor: theme.palette.primary.main2,

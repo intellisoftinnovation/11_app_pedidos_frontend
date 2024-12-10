@@ -81,6 +81,7 @@ function AdminNavbar(props) {
                 height: 40,
                 width: 90
               }}>
+              {/* Display Admin profile picture */}
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -99,6 +100,7 @@ function AdminNavbar(props) {
                   }}
                 />
               </IconButton>
+              {/* Display Admin name */}
               <Typography
                 mt={1}
                 sx={{ fontWeight: 'bold' }}
@@ -106,6 +108,7 @@ function AdminNavbar(props) {
                 Ninja
               </Typography>
             </Box>
+            {/* Selector language and log out */}
             <Menu
               id="menu-appbar"
               anchorEl={anchorEl}

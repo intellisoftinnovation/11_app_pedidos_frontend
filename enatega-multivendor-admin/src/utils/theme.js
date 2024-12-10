@@ -143,9 +143,9 @@ const theme = createTheme({
       white: '#fff'
     },
     primary: {
-      main: '#6FCF97',
-      main2: '#90EA93',
-      main3: '#3C8F7C',
+      main: '#048c34',
+      main2: '#2b9b4b',
+      main3: '#72c17a',
       light: '#fff',
       dark: '#000',
       contrastText: '#fff'

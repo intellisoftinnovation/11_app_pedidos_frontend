@@ -13,7 +13,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import routes from '../../routes'
 import useStyles from './styles'
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
+import { ReactComponent as Logo } from '../../assets/svg/Logo-dinos.svg'
 import { useLocation } from 'react-router-dom'
 import { useTranslation, withTranslation } from 'react-i18next'
 
@@ -137,7 +137,7 @@ function AdminSidebar(props) {
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              background: `linear-gradient(180deg, ${theme.palette.warning.dark} 50%, transparent 50%)`,
+              background: `linear-gradient(180deg, #2b9b4b} 50%, #048c34 50%)`,
               borderRight: 'none'
             }
           }}
