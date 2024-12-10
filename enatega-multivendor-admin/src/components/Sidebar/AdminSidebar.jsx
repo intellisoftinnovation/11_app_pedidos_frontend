@@ -35,15 +35,9 @@ function AdminSidebar(props) {
     <Box className={classes.sidebarBox}>
       <Toolbar className={[classes.rowDisplay, classes.logo]}>
         <Logo fontSize="small" />
-        <Typography
-          variant="h2"
-          className={[classes.headingText, classes.logoText]}>
-          ENATEGA
-        </Typography>
       </Toolbar>
       <Box className={classes.sidebarList}>
         {routes.map((prop, key) => {
-        
           return prop.appearInSidebar && prop.admin ? (
             <>
               {key === 1 ? (

@@ -4,11 +4,11 @@ import ConfigurationContext from '../context/Configuration'
 const ConfigurableValues = () => {
   const configuration = useContext(ConfigurationContext)
 
-   const SERVER_URL = 'https://enatega-multivendor.up.railway.app'
-  const WS_SERVER_URL = 'wss://enatega-multivendor.up.railway.app'
- // const SERVER_URL = 'http://192.168.0.101:8001'
- // const WS_SERVER_URL = 'ws://192.168.0.101:8001'
-  const GOOGLE_MAPS_KEY = configuration.googleApiKey
+  const SERVER_URL = 'https://backend-api-holy-feather-6116.fly.dev'
+  const WS_SERVER_URL = 'wss://backend-api-holy-feather-6116.fly.dev'
+  // const SERVER_URL = 'http://192.168.0.101:8001'
+  // const WS_SERVER_URL = 'ws://192.168.0.101:8001'
+  const GOOGLE_MAPS_KEY = 'AIzaSyBHl1Q60bjHjEJzNlMBNCuLdc0MYlZoQXs'
   const FIREBASE_KEY = configuration.firebaseKey
   const APP_ID = configuration.appId
   const AUTH_DOMAIN = configuration.authDomain

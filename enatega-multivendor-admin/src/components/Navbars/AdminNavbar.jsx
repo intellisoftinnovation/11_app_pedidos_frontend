@@ -18,13 +18,12 @@ import {
 } from '@mui/material'
 import profileImg from '../../assets/img/theme/team-4-800x800.jpg'
 
-
 function AdminNavbar(props) {
   const theme = useTheme()
   const client = useApolloClient()
   const [modal, setModal] = useState(false)
   const [language, setLanguage] = useState(
-    localStorage.getItem('enatega-language') || 'en'
+    localStorage.getItem('enatega-language') || 'es'
   )
   const [anchorEl, setAnchorEl] = useState(null) // Define anchorEl state
 
@@ -131,6 +130,11 @@ function AdminNavbar(props) {
                       sx={{ color: theme.palette.common.black }}
                       value="en">
                       English
+                    </MenuItem>
+                    <MenuItem
+                      sx={{ color: theme.palette.common.black }}
+                      value="es">
+                      Español
                     </MenuItem>
                     <MenuItem
                       sx={{ color: theme.palette.common.black }}
