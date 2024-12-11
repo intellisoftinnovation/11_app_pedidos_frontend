@@ -65,7 +65,7 @@ function AdminNavbar(props) {
           <Typography
             variant="subtitle1"
             component="div"
-            sx={{ flexGrow: 1, color: 'common.black', fontWeight: 'bold' }}>
+            sx={{ flexGrow: 1, color: 'common.white', fontWeight: 'bold' }}>
             {props.match.path === '/restaurant' ? '' : t(props.brandText)}
           </Typography>
 
