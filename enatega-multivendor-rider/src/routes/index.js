@@ -113,7 +113,7 @@ function LocationStack() {
 function Main() {
   const { locationPermission } = useLocationContext()
   const client = useApolloClient()
-  const lastNotificationResponse = Notifications.useLastNotificationResponse()
+  // const lastNotificationResponse = Notifications.useLastNotificationResponse()
 
   const handleNotification = useCallback(async response => {
     if (
@@ -172,7 +172,7 @@ function Main() {
           drawerPosition="right"
           drawerContent={props => <Sidebar {...props} />}
           screenOptions={{ headerShown: false }}>
-          {/*<Drawer.Screen name="SidebBar" component={Sidebar} />*/}
+          {/* <Drawer.Screen name="SidebBar" component={Sidebar} /> */}
 
           <Drawer.Screen name="noDrawer" component={NoDrawer} />
         </Drawer.Navigator>
@@ -240,13 +240,12 @@ function AppContainer() {
 
   useEffect(() => {
     const dsn = configuration?.riderAppSentryUrl
-  
     if (dsn) {
       Sentry.init({
         dsn: dsn,
-        environment:"development",
+        environment: 'development',
         enableInExpoDevelopment: true,
-        debug:  true,
+        debug: true,
         tracesSampleRate: 1.0 // to be changed to 0.2 in production
       })
     }

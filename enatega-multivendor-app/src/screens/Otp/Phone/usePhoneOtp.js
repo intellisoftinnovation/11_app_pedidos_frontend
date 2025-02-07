@@ -106,6 +106,7 @@ const usePhoneOtp = () => {
   const resendOtp = () => {
     otpFrom.current = Math.floor(100000 + Math.random() * 900000).toString()
     mutate({ variables: { phone: profile.phone, otp: otpFrom.current } })
+    console.log(otpFrom.current) // FIXME: Comenta esta linea en produccion para que el OTP no salga por consola :
     setSeconds(30)
   }
 

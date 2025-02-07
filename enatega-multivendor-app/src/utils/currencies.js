@@ -163,3 +163,62 @@ export const paypalCurrencies = [
   { currency: 'THB', currencySymbol: '฿', type: 'PAYPAL' },
   { currency: 'USD', currencySymbol: '$', type: 'PAYPAL' }
 ]
+
+export const yapleCurrencies = [
+  { currency: 'AUD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'BRL', currencySymbol: 'R$', type: 'YAPLE' },
+  { currency: 'CAD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'CZK', currencySymbol: 'Kč', type: 'YAPLE' },
+  { currency: 'DKK', currencySymbol: 'kr', type: 'YAPLE' },
+  { currency: 'EUR', currencySymbol: '€', type: 'YAPLE' },
+  { currency: 'HKD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'HUF', currencySymbol: 'Ft', type: 'YAPLE' },
+  { currency: 'INR', currencySymbol: '₹', type: 'YAPLE' },
+  { currency: 'ILS', currencySymbol: 'ع.د', type: 'YAPLE' },
+  { currency: 'JPY', currencySymbol: '¥', type: 'YAPLE' },
+  { currency: 'MYR', currencySymbol: 'RM', type: 'YAPLE' },
+  { currency: 'MXN', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'TWD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'NZD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'NOK', currencySymbol: 'kr', type: 'YAPLE' },
+  { currency: 'PHP', currencySymbol: '₱', type: 'YAPLE' },
+  { currency: 'PLN', currencySymbol: 'zł', type: 'YAPLE' },
+  { currency: 'GBP', currencySymbol: '£', type: 'YAPLE' },
+  { currency: 'RUB', currencySymbol: '₽', type: 'YAPLE' },
+  { currency: 'SGD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'SEK', currencySymbol: 'kr', type: 'YAPLE' },
+  { currency: 'CHF', currencySymbol: 'Fr', type: 'YAPLE' },
+  { currency: 'THB', currencySymbol: '฿', type: 'YAPLE' },
+  { currency: 'USD', currencySymbol: '$', type: 'YAPLE' },
+  { currency: 'SOL', currencySymbol: 'S/.', type: 'YAPLE' }
+  
+]
+
+export const plinCurrencies = [
+  { currency: 'AUD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'BRL', currencySymbol: 'R$', type: 'PLIN' },
+  { currency: 'CAD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'CZK', currencySymbol: 'Kč', type: 'PLIN' },
+  { currency: 'DKK', currencySymbol: 'kr', type: 'PLIN' },
+  { currency: 'EUR', currencySymbol: '€', type: 'PLIN' },
+  { currency: 'HKD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'HUF', currencySymbol: 'Ft', type: 'PLIN' },
+  { currency: 'INR', currencySymbol: '₹', type: 'PLIN' },
+  { currency: 'ILS', currencySymbol: 'ع.د', type: 'PLIN' },
+  { currency: 'JPY', currencySymbol: '¥', type: 'PLIN' },
+  { currency: 'MYR', currencySymbol: 'RM', type: 'PLIN' },
+  { currency: 'MXN', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'TWD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'NZD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'NOK', currencySymbol: 'kr', type: 'PLIN' },
+  { currency: 'PHP', currencySymbol: '₱', type: 'PLIN' },
+  { currency: 'PLN', currencySymbol: 'zł', type: 'PLIN' },
+  { currency: 'GBP', currencySymbol: '£', type: 'PLIN' },
+  { currency: 'RUB', currencySymbol: '₽', type: 'PLIN' },
+  { currency: 'SGD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'SEK', currencySymbol: 'kr', type: 'PLIN' },
+  { currency: 'CHF', currencySymbol: 'Fr', type: 'PLIN' },
+  { currency: 'THB', currencySymbol: '฿', type: 'PLIN' },
+  { currency: 'USD', currencySymbol: '$', type: 'PLIN' },
+  { currency: 'SOL', currencySymbol: 'S/.', type: 'YAPLE' }
+]

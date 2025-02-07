@@ -21,9 +21,9 @@ import { AuthContext } from './src/context/auth'
 import { TabsContext } from './src/context/tabs'
 import TextDefault from './src/components/Text/TextDefault/TextDefault'
 import { LocationProvider } from './src/context/location'
-import getEnvVars from './environment'
+// import getEnvVars from './environment'
 import moment from 'moment-timezone'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 moment.tz.setDefault('Asia/Karachi')
 LogBox.ignoreLogs([
@@ -41,7 +41,6 @@ export default function App() {
   const [active, setActive] = useState('NewOrder')
 
   const client = setupApolloClient()
- 
 
   useEffect(() => {
     ;(async() => {
@@ -86,7 +85,7 @@ export default function App() {
     setToken(token)
   }
 
-  const logout = async () => {
+  const logout = async() => {
     try {
       client.clearStore()
       await AsyncStorage.removeItem('rider-token')

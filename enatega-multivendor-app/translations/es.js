@@ -436,7 +436,7 @@ export const es = {
     addressNotSaved: 'Aún no has guardado ninguna dirección.',
     addNewAddress: 'Haz clic en "Agregar nueva dirección" para empezar',
     yourOrder: 'Dino Pedido',
-    exclusiveVAt: 'El total es exclusivo de IVA',
+    exclusiveVAt: 'El total es exclusivo de IGV',
     replyRider: '¡Envía una respuesta al repartidor!',
     within: 'Dentro de',
     addTip: 'Agregar propina para el repartidor',
