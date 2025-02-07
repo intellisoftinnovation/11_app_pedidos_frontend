@@ -7,7 +7,7 @@ export async function fetchAddressFromCoordinates(latitude, longitude) {
     const response = await axios.get(
       `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}&language=en`
     )
-
+    
     // Check if the response is successful and contains results
     if (
       response.data &&

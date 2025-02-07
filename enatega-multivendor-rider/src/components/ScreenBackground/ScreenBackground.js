@@ -11,7 +11,7 @@ const ScreenBackground = ({ children }) => {
         backgroundColor={styles.bgColor.backgroundColor}
         barStyle="dark-content"
       />
-      <View style={styles.container}>
+      <View style={[styles.container]}>
         <Image
           source={RiderLogin}
           style={[styles.image]}

@@ -28,7 +28,7 @@ import moment from 'moment'
 import { getTipping, orderFragment } from '../../apollo/queries'
 import { getCoupon, placeOrder } from '../../apollo/mutations'
 import { scale } from '../../utils/scaling'
-import { stripeCurrencies, paypalCurrencies } from '../../utils/currencies'
+import { stripeCurrencies, paypalCurrencies, yapleCurrencies, plinCurrencies } from '../../utils/currencies'
 import { theme } from '../../utils/themeColors'
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
 import ThemeContext from '../../ui/ThemeContext/ThemeContext'
@@ -109,7 +109,7 @@ function Checkout(props) {
   const [tip, setTip] = useState(null)
   const [tipAmount, setTipAmount] = useState(null)
   const modalRef = useRef(null)
-  const [paymentMode, setPaymentMode] = useState('COD')
+  const [paymentMode, setPaymentMode] = useState('SOL')
 
   const { loading, data } = useRestaurant(cartRestaurant)
   const [loadingOrder, setLoadingOrder] = useState(false)
@@ -347,7 +347,7 @@ function Checkout(props) {
 
   function update(cache, { data: { placeOrder } }) {
     try {
-      if (placeOrder && placeOrder.paymentMethod === 'COD') {
+      if (placeOrder && (placeOrder.paymentMethod === 'SOl' || placeOrder.paymentMethod === 'YAPE' || placeOrder.paymentMethod === 'PLIN')) {
         cache.modify({
           fields: {
             orders(existingOrders = []) {
@@ -383,7 +383,7 @@ function Checkout(props) {
       orderStatus: data.placeOrder.orderStatus,
       orderDate: data.placeOrder.orderDate
     })
-    if (paymentMode === 'COD') {
+    if (paymentMode === 'SOl' || paymentMode === 'YAPE' || paymentMode === 'PLIN') {
       props.navigation.reset({
         routes: [
           { name: 'Main' },
@@ -508,7 +508,7 @@ function Checkout(props) {
     }
     if (profile.phone.length > 0 && !profile.phoneIsVerified) {
       FlashMessage({
-        message: t('numberVerificationAlert') 
+        message: t('numberVerificationAlert')
       })
       props.navigation.navigate('PhoneNumber')
       return false
@@ -522,6 +522,12 @@ function Checkout(props) {
     }
     if (paymentMode === 'PAYPAL') {
       return paypalCurrencies.find((val) => val.currency === currency)
+    }
+    if (paymentMode === 'YAPE') {
+      return yapleCurrencies.find((val) => val.currency === currency)
+    }
+    if (paymentMode === 'PLIN') {
+      return plinCurrencies.find((val) => val.currency === currency)
     }
     return true
   }
@@ -841,9 +847,9 @@ function Checkout(props) {
                         {t('titlePayment')}
                       </TextDefault>
                       <View>
-                        <PaymentModeOption title={'Cash'} icon={'dollar'} selected={paymentMode === 'COD'} theme={currentTheme} onSelect={() => { setPaymentMode('COD') }} />
-                        <PaymentModeOption title={'Card (Stripe)'} icon={'credit-card'} selected={paymentMode === 'STRIPE'} theme={currentTheme} onSelect={() => { setPaymentMode('STRIPE') }} />
-                        <PaymentModeOption title={'Card (Paypal)'} icon={'credit-card'} selected={paymentMode === 'PAYPAL'} theme={currentTheme} onSelect={() => { setPaymentMode('PAYPAL') }} />
+                        <PaymentModeOption title={'Efectivo'} icon={'dollar'} selected={paymentMode === 'SOl'} theme={currentTheme} onSelect={() => { setPaymentMode('SOl') }} />
+                        <PaymentModeOption title={'Yape'} icon={'credit-card'} selected={paymentMode === 'YAPE'} theme={currentTheme} onSelect={() => { setPaymentMode('YAPE') }} />
+                        <PaymentModeOption title={'Plin'} icon={'credit-card'} selected={paymentMode === 'PLIN'} theme={currentTheme} onSelect={() => { setPaymentMode('PLIN') }} />
                       </View>
                     </View>
                   </>

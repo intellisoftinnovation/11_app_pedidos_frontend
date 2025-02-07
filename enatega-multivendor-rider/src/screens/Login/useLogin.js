@@ -73,9 +73,10 @@ const useLogin = () => {
   }
   function onError(error) {
     let message = 'Check internet connection'
-    console.log("going in")
+    // console.log("going in")
     try {
       message = error.message
+      console.log(message)
     } catch (error) {}
     setUsername('')
     setPassword('')

@@ -106,6 +106,7 @@ function Menu({ route, props }) {
   const { getCurrentLocation } = useLocation()
   const locationData = location
 
+
   const { data, refetch, networkStatus, loading, error } = useQuery(
     RESTAURANTS,
     {
@@ -122,6 +123,7 @@ function Menu({ route, props }) {
       fetchPolicy: 'network-only'
     }
   )
+
   const [mutate, { loading: mutationLoading }] = useMutation(SELECT_ADDRESS, {
     onError
   })

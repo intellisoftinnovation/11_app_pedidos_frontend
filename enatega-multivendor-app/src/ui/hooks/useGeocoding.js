@@ -6,6 +6,7 @@ const useGeocoding = () => {
 
   const getAddress = async (latitude, longitude) => {
     try {
+      // console.log(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${GOOGLE_MAPS_KEY}&language=en`)
       const response = await axios.get(
         `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${GOOGLE_MAPS_KEY}&language=en`
       )
@@ -31,11 +32,17 @@ const useGeocoding = () => {
         throw new Error('No address found for the given coordinates.')
       }
     } catch (error) {
+      // FIXME: Return A Default Location :|
+      return {
+        formattedAddress: "Cercado de Lima, Lima 15001, Perú",
+        city: "Cercado de Lima"
+      }
+
       console.error('Error fetching address:', error.message)
       throw error
     }
   }
-  return {getAddress}
+  return { getAddress }
 }
 
 export default useGeocoding
