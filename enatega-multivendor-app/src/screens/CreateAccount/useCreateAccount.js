@@ -46,10 +46,10 @@ export const useCreateAccount = () => {
       iosClientId:
         '967541328677-nf8h4ou7rhmq9fahs87p057rggo95eah.apps.googleusercontent.com',
       androidClientId:
-        '967541328677-7264tf7tkdtoufk844rck9mimrve135c.apps.googleusercontent.com'
+        '573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com'
     })
   }
-
+  // console.log(ANDROID_CLIENT_ID_GOOGLE)
   const [request, response, promptAsync] = Google.useAuthRequest({
     androidClientId: ANDROID_CLIENT_ID_GOOGLE,
     iosClientId: IOS_CLIENT_ID_GOOGLE

@@ -2,6 +2,7 @@ import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import * as Localization from 'expo-localization'
 import { Platform } from 'react-native'
+import { es } from './languages/es'
 import { en } from './languages/en'
 import { de } from './languages/de'
 import { fr } from './languages/fr'
@@ -10,6 +11,7 @@ import { zh } from './languages/zh'
 import { ar } from './languages/ar'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 export const languageResources = {
+  es: { translation: es },
   en: { translation: en },
   zh: { translation: zh },
   de: { translation: de },
@@ -18,7 +20,7 @@ export const languageResources = {
   ar: { translation: ar }
 }
 
-const getStoredLanguage = async () => {
+const getStoredLanguage = async() => {
   const lng = await AsyncStorage.getItem('enatega-language')
   console.log(lng)
   i18next.use(initReactI18next).init({

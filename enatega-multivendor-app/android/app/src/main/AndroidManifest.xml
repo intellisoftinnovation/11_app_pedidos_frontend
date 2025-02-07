@@ -17,7 +17,7 @@
     </intent>
   </queries>
   <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme">
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E"/>
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No"/>
     <meta-data android:name="expo.modules.notifications.default_notification_color" android:resource="@color/notification_icon_color"/>
     <meta-data android:name="expo.modules.notifications.default_notification_icon" android:resource="@drawable/notification_icon"/>
     <meta-data android:name="expo.modules.updates.ENABLED" android:value="true"/>
@@ -35,8 +35,8 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="enategamultivendor"/>
-        <data android:scheme="com.enatega.multivendor"/>
-        <data android:scheme="exp+dinos-v1"/>
+        <data android:scheme="com.dinospedidos.org"/>
+        <data android:scheme="exp+dinos-pedidos"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>

@@ -44,7 +44,7 @@ const initialConfig = {
   cloudinaryUploadUrl: '',
   cloudinaryApiKey: '',
   webClientID: '',
-  androidClientID: '',
+  androidClientID: '573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com',
   iOSClientID: '',
   expoClientID: '',
   googleMapLibraries: '',
@@ -75,7 +75,7 @@ export const ConfigurationProvider = (props) => {
           expoClientID:
             '967541328677-d46sl62t52g5r3o5m0mnl2hpptr242nl.apps.googleusercontent.com',
           androidClientID:
-            '967541328677-7264tf7tkdtoufk844rck9mimrve135c.apps.googleusercontent.com',
+            '573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com',
           iOSClientID:
             '967541328677-nf8h4ou7rhmq9fahs87p057rggo95eah.apps.googleusercontent.com'
         }

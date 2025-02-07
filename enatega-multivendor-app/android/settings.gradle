@@ -1,4 +1,4 @@
-rootProject.name = 'dinos v1'
+rootProject.name = ' Dino\'s Pedidos'
 
 dependencyResolutionManagement {
   versionCatalogs {

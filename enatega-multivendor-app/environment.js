@@ -11,6 +11,25 @@ const useEnvVars = (env = Updates.channel) => {
   const configuration = useContext(ConfigurationContext)
 
   if (env === 'production' || env === 'staging') {
+    console.log({
+      GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
+      WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+      SERVER_URL: 'https://gql.tester-pruebas.com/',
+
+      // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
+      // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
+      // SERVER_URL: 'http://192.168.43.124:2002',
+      IOS_CLIENT_ID_GOOGLE: configuration.iOSClientID,
+      ANDROID_CLIENT_ID_GOOGLE: configuration.androidClientID,
+      AMPLITUDE_API_KEY: configuration.appAmplitudeApiKey,
+      GOOGLE_MAPS_KEY: configuration.googleApiKey,
+      EXPO_CLIENT_ID: configuration.expoClientId,
+      SENTRY_DSN: configuration.customerAppSentryUrl,
+      TERMS_AND_CONDITIONS: configuration.termsAndConditions,
+      PRIVACY_POLICY: configuration.privacyPolicy,
+      TEST_OTP: configuration.testOtp,
+      GOOGLE_PACES_API_BASE_URL: configuration.googlePlacesApiBaseUrl
+    })
 
     return {
       GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',

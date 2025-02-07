@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "dinos v1",
+    "name": " Dino's Pedidos",
     "scheme": "enategamultivendor",
     "version": "1.0.56",
-    "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
-    "slug": "dinos-v1",
+    "description": "Dino's Pedidos es una aplicación de pedidos de comida diseñada para ofrecer una experiencia única en la entrega de alimentos.",
+    "slug": "dinos-pedidos",
     "owner": "skeletus",
     "privacy": "public",
     "androidStatusBar": {
@@ -23,7 +23,7 @@
     "ios": {
       "supportsTablet": true,
       "userInterfaceStyle": "automatic",
-      "bundleIdentifier": "com.enatega.multivendor",
+      "bundleIdentifier": "com.dinospedidos.org",
       "config": {
         "googleMapsApiKey": "###### Key #######"
       },
@@ -46,16 +46,16 @@
       "color": "#90E36D",
       "icon": "./assets/not-icon.png",
       "androidMode": "default",
-      "androidCollapsedTitle": "Enatega Multivendor"
+      "androidCollapsedTitle": "Dino's Pedidos"
     },
     "android": {
       "versionCode": 56,
-      "package": "com.enatega.multivendor",
+      "package": "com.dinospedidos.org",
       "googleServicesFile": "./google-services.json",
       "userInterfaceStyle": "automatic",
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E"
+          "apiKey": "AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No"
         }
       },
       "permissions": [
@@ -104,7 +104,7 @@
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Allow $Enatega Multivendor to use your location."
+          "locationAlwaysAndWhenInUsePermission": "Allow $Dinos Pedidos to use your location."
         }
       ]
     ],

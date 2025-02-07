@@ -15,12 +15,13 @@ import i18next from '../../../i18next'
 import { useTranslation } from 'react-i18next'
 
 const languageTypes = [
-  { value: 'English', code: 'en', index: 0 },
-  { value: 'français', code: 'fr', index: 1 },
-  { value: 'ភាសាខ្មែរ', code: 'km', index: 2 },
-  { value: '中文', code: 'zh', index: 3 },
-  { value: 'Deutsche', code: 'de', index: 4 },
-  { value: 'Arabic', code: 'ar', index: 5 }
+  { value: 'Español', code: 'es', index: 0 },
+  { value: 'English', code: 'en', index: 1 },
+  { value: 'français', code: 'fr', index: 2 },
+  { value: 'ភាសាខ្មែរ', code: 'km', index: 3 },
+  { value: '中文', code: 'zh', index: 4 },
+  { value: 'Deutsche', code: 'de', index: 5 },
+  { value: 'Arabic', code: 'ar', index: 6 }
 ]
 
 function Language() {
@@ -28,7 +29,7 @@ function Language() {
   const { t } = useTranslation()
   const [modalVisible, modalVisibleSetter] = useState(false)
   const [activeRadio, setActiveRadio] = useState(languageTypes[0].index)
-  const [languageName, languageNameSetter] = useState('English')
+  const [languageName, languageNameSetter] = useState('Español')
   const inset = useSafeAreaInsets()
   useLayoutEffect(() => {
     navigation.setOptions({

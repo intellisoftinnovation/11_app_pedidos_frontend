@@ -1,49 +1,51 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import {
   View,
   Text,
   ActivityIndicator,
   ScrollView,
   KeyboardAvoidingView,
+  TouchableOpacity,
   Dimensions,
   Platform
 } from 'react-native'
-import { TextDefault, Spinner } from '../../components'
-import { useLogin } from '../../ui/hooks'
+import { Spinner } from '../../components'
+// import { useLogin } from '../../ui/hooks'
 import { colors } from '../../utilities'
 import styles from './styles'
-import { Image, Button, Input, Icon } from 'react-native-elements'
-import { TouchableOpacity } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
+import { Image } from 'react-native-elements'
+// import { useNavigation } from '@react-navigation/native'
 import i18next from '../../../i18n'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useTranslation } from 'react-i18next'
 
 const { height } = Dimensions.get('window')
 export default function SelectLanguage() {
-  const {
-    onLogin,
-    isValid,
-    loading,
-    errors,
-    setPassword,
-    setUserName,
-    username,
-    password
-  } = useLogin()
+  // const {
+  //   onLogin,
+  //   isValid,
+  //   loading,
+  //   errors,
+  //   setPassword,
+  //   setUserName,
+  //   username,
+  //   password
+  // } = useLogin()
   const { t } = useTranslation()
-  const [selectedLanguage, setSelectedLanguage] = useState('')
+  const [selectedLanguage, setSelectedLanguage] = useState('Español')
+  console.log(selectedLanguage)
   const [loader, setLoader] = useState(false)
-  const [showPassword, setShowPassword] = useState(false)
-  const navigation = useNavigation()
+  // const [showPassword, setShowPassword] = useState(false)
+  // const navigation = useNavigation()
   const languageTypes = [
-    { value: 'English', code: 'en', index: 0 },
-    { value: 'français', code: 'fr', index: 1 },
-    { value: 'ភាសាខ្មែរ', code: 'km', index: 2 },
-    { value: '中文', code: 'zh', index: 3 },
-    { value: 'Deutsche', code: 'de', index: 4 },
-    { value: 'arabic', code: 'ar', index: 5 },
-    { value: 'swedish', code: 'sv', index: 6 }
+    { value: 'Español', code: 'es', index: 0 },
+    { value: 'English', code: 'en', index: 1 },
+    { value: 'français', code: 'fr', index: 2 },
+    { value: 'ភាសាខ្មែរ', code: 'km', index: 3 },
+    { value: '中文', code: 'zh', index: 4 },
+    { value: 'Deutsche', code: 'de', index: 5 },
+    { value: 'arabic', code: 'ar', index: 6 },
+    { value: 'swedish', code: 'sv', index: 7 }
   ]
 
   const changeLanguage = async language => {
