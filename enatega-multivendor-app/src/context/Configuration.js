@@ -40,7 +40,7 @@ const initialConfig = {
   customerAppSentryUrl: '',
   restaurantAppSentryUrl: '',
   riderAppSentryUrl: '',
-  googleApiKey: 'AIzaSyBHl1Q60bjHjEJzNlMBNCuLdc0MYlZoQXs',
+  googleApiKey: 'AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No',
   cloudinaryUploadUrl: '',
   cloudinaryApiKey: '',
   webClientID: '',

@@ -33,10 +33,10 @@ const useGeocoding = () => {
       }
     } catch (error) {
       // FIXME: Return A Default Location :|
-      return {
-        formattedAddress: "Cercado de Lima, Lima 15001, Perú",
-        city: "Cercado de Lima"
-      }
+      // return {
+      //   formattedAddress: "Cercado de Lima, Lima 15001, Perú",
+      //   city: "Cercado de Lima"
+      // }
 
       console.error('Error fetching address:', error.message)
       throw error

@@ -1,16 +1,19 @@
 {
   "expo": {
-    "name": " Dino's Pedidos",
+    "name": "Dino's Pedidos",
     "scheme": "enategamultivendor",
-    "version": "1.0.56",
+    "version": "0.2.0",
     "description": "Dino's Pedidos es una aplicación de pedidos de comida diseñada para ofrecer una experiencia única en la entrega de alimentos.",
     "slug": "dinos-pedidos",
-    "owner": "skeletus",
+    "owner": "babyyoda62406",
     "privacy": "public",
     "androidStatusBar": {
       "backgroundColor": "#000"
     },
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,7 +21,9 @@
       "resizeMode": "cover",
       "backgroundColor": "#90E36D"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
@@ -30,7 +35,9 @@
       "usesAppleSignIn": true,
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to use location to determine the delivery address for your orders.",
-        "UIBackgroundModes": ["remote-notification"],
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
         "NSUserTrackingUsageDescription": "Allow this app to collect app-related data that can be used for tracking you or your device.",
         "CFBundleURLTypes": [
           {
@@ -62,7 +69,8 @@
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.RECORD_AUDIO",
-        "android.permission.FOREGROUND_SERVICE"
+        "android.permission.FOREGROUND_SERVICE",
+        "com.google.android.gms.permission.AD_ID"
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -108,16 +116,16 @@
         }
       ]
     ],
-    "extra": {
-      "eas": {
-        "projectId": "df8c19bc-222b-4807-860b-80cf4770d22a"
-      }
-    },
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
     "updates": {
       "url": "https://u.expo.dev/df8c19bc-222b-4807-860b-80cf4770d22a"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e5d38b73-bc63-43cd-a316-9ca5f76fc383"
+      }
     }
   }
 }

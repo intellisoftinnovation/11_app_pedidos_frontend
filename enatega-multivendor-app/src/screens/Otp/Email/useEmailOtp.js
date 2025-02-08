@@ -137,7 +137,7 @@ const useEmailOtp = () => {
     mutate({
       variables: { email: user.email, otp: otpFrom.current }
     })
-    console.log(otpFrom.current) //FIXME: Comenta esta linea en desarrollo
+    // console.log(otpFrom.current) //FIXME: Comenta esta linea en desarrollo
     setSeconds(30)
   }
 

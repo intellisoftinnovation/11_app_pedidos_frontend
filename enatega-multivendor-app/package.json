@@ -1,6 +1,6 @@
 {
-  "name": "enatega-full-app",
-  "version": "5.0.0",
+  "name": "dinos-pedidos",
+  "version": "0.2.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start --offline",
