@@ -9,9 +9,9 @@ import Analytics from "../../utils/analytics";
 import useStyle from "./styles";
 
 function Terms() {
-  useEffect(async()=>{
-    await Analytics.track(Analytics.events.NAVIGATE_TO_TERMS)
-  },[])
+  useEffect(async () => {
+    await Analytics.track(Analytics.events.NAVIGATE_TO_TERMS);
+  }, []);
   const classes = useStyle();
   const { isLoggedIn } = useContext(UserContext);
   return (
@@ -20,7 +20,7 @@ function Terms() {
       <Grid container className={classes.mainContainer}>
         <Box className={classes.imageContainer}>
           <Typography variant="h4" color="textPrimary" align="center" className={classes.title}>
-            TERMS AND CONDITIONS | ENATEGA
+            TÉRMINOS Y CONDICIONES | Dinos
           </Typography>
         </Box>
         <Grid container item xs={12} className={classes.mainContainer}>
@@ -28,421 +28,437 @@ function Terms() {
           <Grid container item xs={10} sm={10} md={9}>
             <ol className={classes.boldText}>
               <Typography variant="subtitle2" className={classes.MV3}>
-                Published: 2021
+                Publicado: 2021
               </Typography>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  TERMS OF USE
+                  TÉRMINOS DE USO
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  These Terms of Use (“<b>Terms</b>”) govern your use of the websites and mobile applications provided
-                  by enatega (collectively the “<b>Platforms</b>”). Please read these Terms carefully. By accessing and
-                  using the Platforms, you agree that you have read, understood and accepted the Terms including any
-                  additional terms and conditions and any policies referenced herein, available on the Platforms or
-                  available by hyperlink. If you do not agree or fall within the Terms, please do not use the Platforms.
+                  Estos Términos de Uso (“<b>Términos</b>”) rigen tu uso de los sitios web y aplicaciones móviles
+                  proporcionados por Dino's Pedidos (colectivamente, las “<b>Plataformas</b>”). Por favor, lee estos Términos
+                  cuidadosamente. Al acceder y usar las Plataformas, aceptas que has leído, entendido y aceptado los
+                  Términos, incluyendo cualquier término y condición adicional y cualquier política referenciada
+                  aquí, disponible en las Plataformas o disponible mediante hipervínculo. Si no estás de acuerdo o no
+                  cumples con los Términos, por favor no uses las Plataformas.
                 </Typography>
                 <Typography variant="subtitle2">
-                  The Platforms may be used by (i) natural persons who have reached 18 years of age and (ii) corporate
-                  legal entities, e.g companies. Where applicable, these Terms shall be subject to country-specific
-                  provisions as set out herein.
+                  Las Plataformas pueden ser utilizadas por (i) personas naturales que hayan alcanzado los 18 años de
+                  edad y (ii) entidades legales corporativas, por ejemplo, empresas. Cuando sea aplicable, estos
+                  Términos estarán sujetos a disposiciones específicas por país, como se establece aquí.
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  Users below the age of 18 must obtain consent from parent(s) or legal guardian(s), who by accepting
-                  these Terms shall agree to take responsibility for your actions and any charges associated with your
-                  use of the Platforms and/or purchase of Goods. If you do not have consent from your parent(s) or legal
-                  guardian(s), you must stop using/accessing the Platforms immediately.
+                  Los usuarios menores de 18 años deben obtener el consentimiento de sus padres o tutores legales, quienes,
+                  al aceptar estos Términos, aceptarán asumir la responsabilidad por tus acciones y cualquier cargo
+                  asociado con tu uso de las Plataformas y/o la compra de Bienes. Si no tienes el consentimiento de tus
+                  padres o tutores legales, debes dejar de usar/acceder a las Plataformas inmediatamente.
                 </Typography>
                 <Typography variant="subtitle2">
-                  Enatega reserves the right to change or modify these Terms (including our policies which are
-                  incorporated into these Terms) at any time. You are strongly recommended to read these Terms
-                  regularly. You will be deemed to have agreed to the amended Terms by your continued use of the
-                  Platforms following the date on which the amended Terms are posted.
+                  Dino's Pedidos se reserva el derecho de cambiar o modificar estos Términos (incluyendo nuestras políticas
+                  que se incorporan a estos Términos) en cualquier momento. Se recomienda encarecidamente leer estos
+                  Términos regularmente. Se considerará que has aceptado los Términos modificados al continuar usando
+                  las Plataformas después de la fecha en que se publiquen los Términos modificados.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Enatega
+                  Dino's Pedidos
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
-                    <Typography variant="subtitle2">What we do</Typography>
+                    <Typography variant="subtitle2">Lo que hacemos</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      Through our Platforms, enatega links you to the vendors (“<b>Vendors</b>”) for you to order a
-                      variety of goods including prepared meals, non-prepared food and miscellaneous non-food items
-                      (hereinafter collectively referred to as "<b>Goods</b>") to be delivered to you. When you place an
-                      order for Goods from our Vendors (“<b>Order</b>”), enatega acts as an agent on behalf of that
-                      Vendor to facilitate, process and conclude the order and subsequently for either us or the Vendor
-                      to deliver your Order to you. Vendors may be owned and operated by third party vendors, our
-                      affiliate companies, or us.
+                      A través de nuestras Plataformas, Dino's Pedidos te conecta con los proveedores (“<b>Proveedores</b>”)
+                      para que puedas pedir una variedad de bienes, incluyendo comidas preparadas, alimentos no
+                      preparados y artículos varios no alimentarios (en adelante, colectivamente denominados “
+                      <b>Bienes</b>”) para que te sean entregados. Cuando realizas un pedido de Bienes a nuestros
+                      Proveedores (“<b>Pedido</b>”), Dino's Pedidos actúa como agente en nombre de ese Proveedor para
+                      facilitar, procesar y concluir el pedido y, posteriormente, para que nosotros o el Proveedor
+                      entreguen tu Pedido. Los Proveedores pueden ser propiedad y estar operados por terceros,
+                      empresas afiliadas o por nosotros.
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">How to contact us</Typography>
+                    <Typography variant="subtitle2">Cómo contactarnos</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      For customer support, you may reach out to us via email or through our in-app customer support
-                      chat feature.{" "}
+                      Para soporte al cliente, puedes contactarnos por correo electrónico o a través de nuestra función
+                      de chat de soporte al cliente en la aplicación.{" "}
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={clsx(classes.boldText, classes.MV3)}>
-                  Use of the Platforms and enatega Account
+                  Uso de las Plataformas y Cuenta de Dino's Pedidos
                 </Typography>
                 <Typography variant="subtitle2">
-                  You will need to register for a enatega account for you to use the Platform. When you register for a
-                  enatega account we will ask you to provide your personal information including a valid email address,
-                  a mobile phone number and a unique password. To purchase an Order, depending on which payment method
-                  you opt for, you may need to provide us with your credit card details. Your unique password should not
-                  be shared with anyone and you agree to keep it secret at all times. You are solely responsible for
-                  keeping your password safe. Save for cases of fraud or abuse which are not your fault, you accept that
-                  all Orders placed under your enatega account are your sole responsibility.
+                  Necesitarás registrarte para una cuenta de Dino's Pedidos para poder usar la Plataforma. Cuando te registras
+                  para una cuenta de Dino's Pedidos, te pediremos que proporciones tu información personal, incluyendo una
+                  dirección de correo electrónico válida, un número de teléfono móvil y una contraseña única. Para
+                  comprar un Pedido, dependiendo del método de pago que elijas, es posible que necesites proporcionarnos
+                  los detalles de tu tarjeta de crédito. Tu contraseña única no debe ser compartida con nadie y aceptas
+                  mantenerla en secreto en todo momento. Eres el único responsable de mantener tu contraseña segura.
+                  Excepto en casos de fraude o abuso que no sean tu culpa, aceptas que todos los Pedidos realizados bajo
+                  tu cuenta de Dino's Pedidos son de tu exclusiva responsabilidad.
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  enatega shall not be liable for Orders that encounter delivery issues due to incomplete, incorrect or
-                  missing information provided by you. You are obliged to provide information that is complete, accurate
-                  and truthful for the proper processing of the Order, including your delivery address and contact
-                  information.
+                  Dino's Pedidos no será responsable de los Pedidos que encuentren problemas de entrega debido a información
+                  incompleta, incorrecta o faltante proporcionada por ti. Estás obligado a proporcionar información
+                  completa, precisa y veraz para el procesamiento adecuado del Pedido, incluyendo tu dirección de
+                  entrega y información de contacto.
                 </Typography>
                 <Typography variant="subtitle2">
-                  If you wish to delete your enatega account, please send us an email requesting the same. We may
-                  restrict, suspend or terminate your enatega account and/or use of the Platforms, if we reasonably
-                  believe that:
+                  Si deseas eliminar tu cuenta de Dino's Pedidos, por favor envíanos un correo electrónico solicitándolo.
+                  Podemos restringir, suspender o terminar tu cuenta de Dino's Pedidos y/o el uso de las Plataformas, si
+                  razonablemente creemos que:
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  someone other than you is using your enatega account; or
+                  alguien que no seas tú está usando tu cuenta de Dino's Pedidos; o
                 </Typography>
                 <Typography variant="subtitle2">
-                  where you are suspected or discovered to have been involved in any activity or conduct that is in
-                  breach of these Terms, our policies and guidelines, or involved in activity or conduct which we deem
-                  in our sole discretion to be an abuse of the Platforms.
+                  si se sospecha o descubre que has estado involucrado en cualquier actividad o conducta que incumpla
+                  estos Términos, nuestras políticas y pautas, o involucrado en una actividad o conducta que, a nuestra
+                  exclusiva discreción, consideremos un abuso de las Plataformas.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={clsx(classes.boldText, classes.MV3)}>
-                  Restrictions
+                  Restricciones
                 </Typography>
-                <Typography variant="subtitle2">Activities Prohibited on the Platforms</Typography>
+                <Typography variant="subtitle2">Actividades Prohibidas en las Plataformas</Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  In processing your order we may send your information to credit reference and fraud prevention
-                  agencies.
+                  Al procesar tu pedido, podemos enviar tu información a agencias de referencia crediticia y prevención
+                  de fraude.
                 </Typography>
                 <Typography variant="subtitle2">
-                  The following is a non-exhaustive list of the types of conduct that are illegal or prohibited on the
-                  Platforms. Enatega reserves the right to investigate and take appropriate legal action against anyone
-                  who, in enatega's sole discretion, engages in any of the prohibited activities. Prohibited activities
-                  include, but are not limited to the following:
+                  La siguiente es una lista no exhaustiva de los tipos de conducta que son ilegales o prohibidos en las
+                  Plataformas. Dino's Pedidos se reserva el derecho de investigar y tomar las medidas legales correspondientes
+                  contra cualquier persona que, a exclusiva discreción de Dino's Pedidos, participe en cualquiera de las
+                  actividades prohibidas. Las actividades prohibidas incluyen, pero no se limitan a lo siguiente:
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
                     <Typography variant="subtitle2">
-                      using the Platforms for any purpose in violation of local, state, or federal laws or regulations;
+                      usar las Plataformas para cualquier propósito que viole las leyes o regulaciones locales,
+                      estatales o federales;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting any content that infringes the intellectual property rights, privacy rights, publicity
-                      rights, trade secret rights, or any other rights of any party;
+                      publicar cualquier contenido que infrinja los derechos de propiedad intelectual, derechos de
+                      privacidad, derechos de publicidad, derechos de secretos comerciales o cualquier otro derecho de
+                      cualquier parte;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting content that is unlawful, obscene, defamatory, threatening, harassing, abusive,
-                      slanderous, hateful, or embarrassing to any other person or entity as determined by enatega in its
-                      sole discretion or pursuant to local community standards;
+                      publicar contenido que sea ilegal, obsceno, difamatorio, amenazante, acosador, abusivo,
+                      calumnioso, odioso o embarazoso para cualquier otra persona o entidad, según lo determine Dino's Pedidos
+                      a su exclusiva discreción o de acuerdo con los estándares de la comunidad local;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting content that constitutes cyber-bullying, as determined by enatega in its sole discretion;
+                      publicar contenido que constituya ciberacoso, según lo determine Dino's Pedidos a su exclusiva
+                      discreción;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting content that depicts any dangerous, life-threatening, or otherwise risky behavior;
+                      publicar contenido que represente cualquier comportamiento peligroso, que ponga en riesgo la vida
+                      o que sea de otro modo riesgoso;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting telephone numbers, street addresses, or last names of any person;
+                      publicar números de teléfono, direcciones físicas o apellidos de cualquier persona;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting URLs to external websites or any form of HTML or programming code;
+                      publicar URL a sitios web externos o cualquier forma de código HTML o de programación;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      posting anything that may be “spam,” as determined by enatega in its sole discretion;
+                      publicar cualquier cosa que pueda ser considerada “spam”, según lo determine Dino's Pedidos a su
+                      exclusiva discreción;
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">impersonating another person when posting content;</Typography>
+                    <Typography variant="subtitle2">suplantar a otra persona al publicar contenido;</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      harvesting or otherwise collecting information about others, including e-mail addresses, without
-                      their consent;
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="subtitle2">
-                      allowing any other person or entity to use your identification for posting or viewing comments;
+                      recolectar información sobre otros, incluyendo direcciones de correo electrónico, sin su
+                      consentimiento;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      harassing, threatening, stalking, or abusing any person on the Platforms;
+                      permitir que cualquier otra persona o entidad use tu identificación para publicar o ver comentarios;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      engaging in any other conduct that restricts or inhibits any other person from using or enjoying
-                      the Websites, or which, in the sole discretion of enatega, exposes enatega or any of its
-                      customers, suppliers, or any other parties to any liability or detriment of any type; or
+                      acosar, amenazar, acechar o abusar de cualquier persona en las Plataformas;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      encouraging other people to engage in any prohibited activities as described herein.
+                      participar en cualquier otra conducta que restrinja o inhiba a cualquier otra persona de usar o
+                      disfrutar de los Sitios Web, o que, a exclusiva discreción de Dino's Pedidos, exponga a Dino's Pedidos o a
+                      cualquiera de sus clientes, proveedores o cualquier otra parte a cualquier responsabilidad o
+                      perjuicio de cualquier tipo; o
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      enatega reserves the right but is not obligated to do any or all of the following:
+                      alentar a otras personas a participar en cualquier actividad prohibida descrita aquí.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      investigate an allegation that any content posted on the Platforms does not conform to these Terms
-                      and determine in its sole discretion to remove or request the removal of the content;
+                      Dino's Pedidos se reserva el derecho, pero no la obligación, de hacer cualquiera o todos los siguientes:
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      remove content which is abusive, illegal, or disruptive, or that otherwise fails to conform with
-                      these Terms;
+                      investigar una denuncia de que cualquier contenido publicado en las Plataformas no cumple con
+                      estos Términos y determinar, a su exclusiva discreción, eliminar o solicitar la eliminación del
+                      contenido;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      suspend or terminate a user’s access to the Platforms or their enatega Account upon any breach of
-                      these Terms;
+                      eliminar contenido que sea abusivo, ilegal o disruptivo, o que de otro modo no cumpla con estos
+                      Términos;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      monitor, edit, or disclose any content on the Platforms; and
+                      suspender o terminar el acceso de un usuario a las Plataformas o a su cuenta de Dino's Pedidos ante
+                      cualquier incumplimiento de estos Términos;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      edit or delete any content posted on the Platforms, regardless of whether such content violates
-                      these standards.
+                      monitorear, editar o divulgar cualquier contenido en las Plataformas; y
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography variant="subtitle2">
+                      editar o eliminar cualquier contenido publicado en las Plataformas, independientemente de si dicho
+                      contenido viola estos estándares.
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Intellectual Property
+                  Propiedad Intelectual
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  All trademarks, logos, images, and service marks, including these Terms as displayed on the Platforms
-                  or in our marketing material, whether registered or unregistered, are the intellectual property of
-                  enatega and/or third parties who have authorised us with the use (collectively the “<b>Trademarks</b>
-                  ”). You may not use, copy, reproduce, republish, upload, post, transmit, distribute, or modify these
-                  Trademarks in any way without our prior express written consent. The use of enatega's trademarks on
-                  any other website not approved by us is strictly prohibited. Enatega will aggressively enforce its
-                  intellectual property rights to the fullest extent of the law, including criminal prosecution. Enatega
-                  neither warrants nor represents that your use of materials displayed on the Platforms will not
-                  infringe rights of third parties not owned by or affiliated with enatega. Use of any materials on the
-                  Platforms is at your own risk.
+                  Todas las marcas registradas, logotipos, imágenes y marcas de servicio, incluidos estos Términos
+                  según se muestran en las Plataformas o en nuestro material de marketing, ya sean registrados o no, son
+                  propiedad intelectual de Dino's Pedidos y/o terceros que nos han autorizado su uso (colectivamente, las “
+                  <b>Marcas Registradas</b>”). No puedes usar, copiar, reproducir, volver a publicar, cargar, publicar,
+                  transmitir, distribuir o modificar estas Marcas Registradas de ninguna manera sin nuestro
+                  consentimiento expreso por escrito previo. El uso de las marcas registradas de Dino's Pedidos en cualquier
+                  otro sitio web no aprobado por nosotros está estrictamente prohibido. Dino's Pedidos hará cumplir
+                  agresivamente sus derechos de propiedad intelectual hasta el máximo alcance de la ley, incluyendo el
+                  enjuiciamiento penal. Dino's Pedidos no garantiza ni representa que tu uso de los materiales mostrados en las
+                  Plataformas no infringirá los derechos de terceros no propiedad de o afiliados a Dino's Pedidos. El uso de
+                  cualquier material en las Plataformas es bajo tu propio riesgo.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Restrictions on Goods
+                  Restricciones sobre los Bienes
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
                     <Typography variant="subtitle2">
-                      Some of the Goods we offer on our Platforms are subject to restrictions for purchase (“
-                      <b>Restricted Goods</b>”)
+                      Algunos de los Bienes que ofrecemos en nuestras Plataformas están sujetos a restricciones para su
+                      compra (“<b>Bienes Restringidos</b>”)
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Alcohol / Alcoholic Products (“<b>Alcohol</b>”){" "}
+                      Alcohol / Productos Alcohólicos (“<b>Alcohol</b>”){" "}
                     </Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      To purchase Alcohol, you must be of the statutory legal age. Enatega, the Vendor and their
-                      delivery riders, as the case may be, reserve the right in their sole discretion:
+                      Para comprar Alcohol, debes tener la edad legal requerida. Dino's Pedidos, el Proveedor y sus
+                      repartidores, según corresponda, se reservan el derecho a su exclusiva discreción:
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      to ask for valid proof of age (e.g. ID card) to any persons before they deliver Alcohol;
+                      solicitar una prueba de edad válida (por ejemplo, una identificación) a cualquier persona antes de
+                      entregar Alcohol;
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      to refuse delivery if you are unable to prove you are of legal age; and/or
+                      rechazar la entrega si no puedes demostrar que tienes la edad legal; y/o
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      to refuse delivery to any persons for any reason whatsoever.
+                      rechazar la entrega a cualquier persona por cualquier motivo.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Cigarettes/Tobacco Products (“<b>Tobacco</b>”)
+                      Cigarrillos/Productos de Tabaco (“<b>Tabaco</b>”)
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      We may offer Tobacco on some of our Platforms where the laws allow. By offering Tobacco for sale
-                      on our Platforms, we do not purport to advertise, promote or encourage the purchase or use of
-                      Tobacco in any way.
+                      Podemos ofrecer Tabaco en algunas de nuestras Plataformas donde las leyes lo permitan. Al ofrecer
+                      Tabaco a la venta en nuestras Plataformas, no pretendemos anunciar, promover o fomentar la compra
+                      o el uso de Tabaco de ninguna manera.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      To purchase Tobacco, you must be of the statutory legal age. Enatega, the Vendor and their
-                      delivery riders, as the case may be, reserve the right in their sole discretion:
+                      Para comprar Tabaco, debes tener la edad legal requerida. Dino's Pedidos, el Proveedor y sus
+                      repartidores, según corresponda, se reservan el derecho a su exclusiva discreción:
                     </Typography>
                     <ul className={classes.circle}>
                       <li>
                         <Typography variant="subtitle2">
-                          to ask for valid proof of age (e.g. ID card) to any persons before they deliver Tobacco;
+                          solicitar una prueba de edad válida (por ejemplo, una identificación) a cualquier persona antes
+                          de entregar Tabaco;
                         </Typography>
                       </li>
                       <li>
                         <Typography variant="subtitle2">
-                          to refuse delivery if you are unable to prove you are of legal age; and/or
+                          rechazar la entrega si no puedes demostrar que tienes la edad legal; y/o
                         </Typography>
                       </li>
                       <li>
                         <Typography variant="subtitle2">
-                          to refuse delivery to any persons for any reason whatsoever.
+                          rechazar la entrega a cualquier persona por cualquier motivo.
                         </Typography>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Any offer for any Alcohol and Tobacco made on the Platforms is void when it is prohibited by law.
+                      Cualquier oferta de Alcohol y Tabaco realizada en las Plataformas será nula cuando esté prohibida
+                      por la ley.
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Orders
+                  Pedidos
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
                     <Typography variant="subtitle2">
-                      When you place an Order with enatega, enatega will confirm your order by sending you a
-                      confirmation email containing the Order receipt. Where applicable, Orders will include delivery
-                      fees and any applicable tax (e.g. goods and services tax, value-added tax, etc.).
+                      Cuando realizas un Pedido con Dino's Pedidos, Dino's Pedidos confirmará tu pedido enviándote un correo
+                      electrónico de confirmación que contiene el recibo del Pedido. Cuando sea aplicable, los Pedidos
+                      incluirán gastos de envío y cualquier impuesto aplicable (por ejemplo, impuesto sobre bienes y
+                      servicios, impuesto al valor agregado, etc.).
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Minimum Order Value - Some of our Vendors require a minimum order value (“<b>MOV</b>”) before an
-                      Order can be placed and delivered to you. Where an applicable Order fails to meet the MOV, you
-                      will have the option of paying the difference to meet the MOV or to add more Goods to your Order.
+                      Valor Mínimo del Pedido: Algunos de nuestros Proveedores requieren un valor mínimo de pedido (“
+                      <b>MOV</b>”) antes de que se pueda realizar y entregar un Pedido. Cuando un Pedido aplicable no
+                      cumple con el MOV, tendrás la opción de pagar la diferencia para alcanzar el MOV o agregar más
+                      Bienes a tu Pedido.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Special Instructions – enatega and the Vendor (as the case may be) reasonably endeavour to comply
-                      with your special instructions for an Order. However in some cases where this is not feasible,
-                      possible or commercially reasonable, enatega and/or the Vendor reserve the right to proceed to
-                      prepare the Order in accordance with standard operating procedures. Neither enatega nor the Vendor
-                      shall be responsible to replace or refund an Order which does not conform to special instructions
-                      provided by you.
+                      Instrucciones Especiales: Dino's Pedidos y el Proveedor (según corresponda) harán esfuerzos razonables
+                      para cumplir con tus instrucciones especiales para un Pedido. Sin embargo, en algunos casos en los
+                      que esto no sea factible, posible o comercialmente razonable, Dino's Pedidos y/o el Proveedor se reservan
+                      el derecho de proceder a preparar el Pedido de acuerdo con los procedimientos operativos estándar.
+                      Ni Dino's Pedidos ni el Proveedor serán responsables de reemplazar o reembolsar un Pedido que no cumpla
+                      con las instrucciones especiales proporcionadas por ti.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Allergens – enatega is not obligated to provide ingredient information or allergen information on
-                      the Platforms. Further, enatega does not guarantee that the Goods sold by Vendors are free of
-                      allergens. If you have allergies, allergic reactions or dietary restrictions and requirements,
-                      please contact the Vendor before placing an Order on our Platforms.
+                      Alérgenos: Dino's Pedidos no está obligado a proporcionar información sobre ingredientes o alérgenos en
+                      las Plataformas. Además, Dino's Pedidos no garantiza que los Bienes vendidos por los Proveedores estén
+                      libres de alérgenos. Si tienes alergias, reacciones alérgicas o restricciones y requisitos
+                      dietéticos, por favor contacta al Proveedor antes de realizar un Pedido en nuestras Plataformas.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Please note that your Order may be subject to additional terms and conditions provided by the
-                      Vendor.
+                      Ten en cuenta que tu Pedido puede estar sujeto a términos y condiciones adicionales proporcionados
+                      por el Proveedor.
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Prior to placing the Order</Typography>
+                    <Typography variant="subtitle2">Antes de realizar el Pedido</Typography>
                     <ul className={classes.circle}>
                       <li>
                         <Typography variant="subtitle2">
-                          You are required to provide the delivery address in order for the Platform to display the
-                          Vendors available in your delivery area.
+                          Debes proporcionar la dirección de entrega para que la Plataforma muestre los Proveedores
+                          disponibles en tu área de entrega.
                         </Typography>
                       </li>
                       <li>
                         <Typography variant="subtitle2">
-                          Once you select a Vendor, you will be taken to that Vendor’s menu page for you to select and
-                          add your Goods to the cart.
+                          Una vez que selecciones un Proveedor, serás llevado a la página del menú de ese Proveedor para
+                          que selecciones y agregues tus Bienes al carrito.
                         </Typography>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Placing the Order</Typography>
+                    <Typography variant="subtitle2">Realización del Pedido</Typography>
                     <ul className={classes.circle}>
                       <li>
                         <Typography variant="subtitle2">
-                          To complete an Order, please follow the onscreen instructions after clicking ‘Checkout’. You
-                          may be required to provide additional details for us to complete your Order. You are required
-                          to review and confirm that all the information you provide, including the amounts, delivery
-                          details, personal details, payment information, and voucher codes (if applicable) is true,
-                          accurate and complete before you click “PLACE ORDER”. An Order is successfully placed when you
-                          receive an email confirmation containing your Order receipt from us.
+                          Para completar un Pedido, sigue las instrucciones en pantalla después de hacer clic en
+                          ‘Finalizar Compra’. Es posible que necesites proporcionar detalles adicionales para que
+                          completemos tu Pedido. Debes revisar y confirmar que toda la información que proporcionas,
+                          incluyendo los montos, detalles de entrega, información personal, información de pago y
+                          códigos de cupones (si aplica) es verdadera, precisa y completa antes de hacer clic en
+                          “REALIZAR PEDIDO”. Un Pedido se realiza con éxito cuando recibes un correo electrónico de
+                          confirmación que contiene tu recibo de Pedido de nuestra parte.
                         </Typography>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Cancelling an Order</Typography>
+                    <Typography variant="subtitle2">Cancelación de un Pedido</Typography>
                     <ul className={classes.circle}>
                       <li>
                         <Typography variant="subtitle2">
-                          Please contact us immediately via our in-app customer support chat feature if you wish to
-                          cancel your Order after it has been placed. You have the right to cancel your Order provided a
-                          Vendor has not yet accepted your Order.
+                          Por favor, contáctanos inmediatamente a través de nuestra función de chat de soporte al
+                          cliente en la aplicación si deseas cancelar tu Pedido después de haberlo realizado. Tienes
+                          derecho a cancelar tu Pedido siempre que un Proveedor no haya aceptado tu Pedido.
                         </Typography>
                       </li>
                       <li>
-                        <Typography variant="subtitle2">Refunds</Typography>
+                        <Typography variant="subtitle2">Reembolsos</Typography>
                         <ul>
                           <li>
-                            <Typography variant="subtitle2">Online Payment Orders</Typography>
+                            <Typography variant="subtitle2">Pedidos con Pago en Línea</Typography>
                             <Typography variant="subtitle2">
-                              You have the right to a refund for a cancelled Order only if a Vendor has not yet accepted
-                              your Order. Should you still decide to cancel your Order after it has been accepted by the
-                              Vendor, you understand that no refunds (whether in whole or in part) will be issued to you
-                              and you forfeit the delivery of your cancelled Order.
+                              Tienes derecho a un reembolso por un Pedido cancelado solo si un Proveedor no ha aceptado
+                              tu Pedido. Si decides cancelar tu Pedido después de que haya sido aceptado por el
+                              Proveedor, entiendes que no se emitirán reembolsos (ya sea en su totalidad o en parte) y
+                              que perderás la entrega de tu Pedido cancelado.
                             </Typography>
                           </li>
                           <li>
-                            <Typography variant="subtitle2">Cash-on-Delivery Orders </Typography>
+                            <Typography variant="subtitle2">Pedidos con Pago Contra Entrega</Typography>
                             <Typography variant="subtitle2">
-                              You have the right to cancel your Order only if a Vendor has not yet accepted your Order.
-                              Should you still decide to cancel your Order after it has been accepted by the Vendor, you
-                              understand that you shall forfeit the delivery of your cancelled Order and
-                              cash-on-delivery may be removed from your list of available payment methods for your
-                              future orders.
+                              Tienes derecho a cancelar tu Pedido solo si un Proveedor no ha aceptado tu Pedido. Si
+                              decides cancelar tu Pedido después de que haya sido aceptado por el Proveedor, entiendes
+                              que perderás la entrega de tu Pedido cancelado y que el pago contra entrega puede ser
+                              eliminado de tu lista de métodos de pago disponibles para tus futuros pedidos.
                             </Typography>
                           </li>
                         </ul>
@@ -451,429 +467,444 @@ function Terms() {
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Enatega reserves the right to cancel any Order and/or suspend, deactivate or terminate your
-                      enatega account in its sole discretion if it reasonably suspects or detects fraudulent behavior or
-                      activity associated with your enatega account and/or with your Order.{" "}
+                      Dino's Pedidos se reserva el derecho de cancelar cualquier Pedido y/o suspender, desactivar o terminar tu
+                      cuenta de Dino's Pedidos a su exclusiva discreción si sospecha razonablemente o detecta un comportamiento
+                      fraudulento o actividad asociada con tu cuenta de Dino's Pedidos y/o con tu Pedido.{" "}
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Prices and Payments
+                  Precios y Pagos
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
                     <Typography variant="subtitle2">
-                      Prices quoted on the Platform shall be displayed in the applicable country’s national currency and
-                      subject to applicable tax. Prices and offers on the Platforms may vary from the prices and you
-                      accept that offers offered by our Vendors (either on their own websites, mobile applications, or
-                      at their brick-and-mortar outlets).
+                      Los precios cotizados en la Plataforma se mostrarán en la moneda nacional del país aplicable y
+                      estarán sujetos a los impuestos aplicables. Los precios y ofertas en las Plataformas pueden variar
+                      de los precios y ofertas ofrecidos por nuestros Proveedores (ya sea en sus propios sitios web,
+                      aplicaciones móviles o en sus establecimientos físicos).
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">include TAX, VAT or such other equivalent tax; or</Typography>
+                    <Typography variant="subtitle2">incluyen IMPUESTOS, IVA u otro impuesto equivalente; o</Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">exclude TAX, VAT or such other equivalent tax.</Typography>
+                    <Typography variant="subtitle2">excluyen IMPUESTOS, IVA u otro impuesto equivalente.</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      A breakdown of the prices and additional charges are displayed before Checkout. When you place an
-                      Order, you agree to all amounts, additional charges and the final ‘Total’ amount which is
-                      displayed to you.{" "}
+                      Un desglose de los precios y cargos adicionales se muestra antes de Finalizar la Compra. Cuando
+                      realizas un Pedido, aceptas todos los montos, cargos adicionales y el monto final ‘Total’ que se
+                      te muestra.{" "}
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Delivery fees are chargeable on every Order unless:</Typography>
+                    <Typography variant="subtitle2">Los gastos de envío se aplican a cada Pedido a menos que:</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      you opt to collect your Order directly from the Vendor (“<b>Pick-Up</b>”);
+                      optes por recoger tu Pedido directamente del Proveedor (“<b>Recogida</b>”);
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      you have a valid promotional or discount voucher and apply it at Checkout; or
+                      tengas un cupón promocional o de descuento válido y lo apliques al Finalizar la Compra; o
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">unless stated otherwise.</Typography>
+                    <Typography variant="subtitle2">a menos que se indique lo contrario.</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Prices indicated on the Platforms are as at the time of each Order and may be subject to change.
+                      Los precios indicados en las Plataformas son al momento de cada Pedido y pueden estar sujetos a
+                      cambios.
                     </Typography>
                     <li>
                       <Typography variant="subtitle2">
-                        You can choose to pay for an Order using any of the different payment methods offered on the
-                        Platforms including:
+                        Puedes elegir pagar un Pedido utilizando cualquiera de los diferentes métodos de pago ofrecidos
+                        en las Plataformas, incluyendo:
                       </Typography>
                     </li>
                     <li>
                       <Typography variant="subtitle2">
-                        Our payment partners: Visa, Mastercard, American Express, Google Pay, PayPal, Apple Pay;
+                        Nuestros socios de pago: Visa, Mastercard, American Express, Google Pay, PayPal, Apple Pay;
                       </Typography>
                     </li>
                     <li>
-                      <Typography variant="subtitle2">Cash-on-Delivery; or</Typography>
+                      <Typography variant="subtitle2">Pago Contra Entrega; o</Typography>
                     </li>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Such other payment method we offer from time to time.</Typography>
+                    <Typography variant="subtitle2">Cualquier otro método de pago que ofrezcamos de vez en cuando.</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      If you have existing credit in your enatega account or valid promotional or discount vouchers, you
-                      can use this pay for part or all of your Order as the case may be.
+                      Si tienes crédito existente en tu cuenta de Dino's Pedidos o cupones promocionales o de descuento
+                      válidos, puedes usarlos para pagar parte o la totalidad de tu Pedido, según corresponda.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      After an Order is successfully placed, you will receive an email confirmation from us with your
-                      Order receipt. Delivery fees will not appear in your Order receipt if you opt for Pick-Up.
+                      Después de que un Pedido se realice con éxito, recibirás un correo electrónico de confirmación de
+                      nuestra parte con tu recibo de Pedido. Los gastos de envío no aparecerán en tu recibo de Pedido si
+                      optas por la Recogida.
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Payment Methods</Typography>
+                    <Typography variant="subtitle2">Métodos de Pago</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      Enatega reserves the right to offer additional payment methods and/or remove existing payment
-                      methods at anytime in its sole discretion. If you choose to pay using an online payment method,
-                      the payment shall be processed by our third party payment service provider(s). With your consent,
-                      your credit card / payment information will be stored with our third party payment service
-                      provider(s) for future orders. Enatega does not store your credit card or payment information.
+                      Dino's Pedidos se reserva el derecho de ofrecer métodos de pago adicionales y/o eliminar métodos de pago
+                      existentes en cualquier momento a su exclusiva discreción. Si eliges pagar utilizando un método de
+                      pago en línea, el pago será procesado por nuestro(s) proveedor(es) de servicios de pago de
+                      terceros. Con tu consentimiento, la información de tu tarjeta de crédito/pago será almacenada con
+                      nuestro(s) proveedor(es) de servicios de pago de terceros para futuros pedidos. Dino's Pedidos no
+                      almacena la información de tu tarjeta de crédito o pago.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      You must ensure that you have sufficient funds on your credit and debit card to fulfil payment of
-                      an Order. Insofar as required, enatega takes responsibility for payments made on our Platforms
-                      including refunds, chargebacks, cancellations and dispute resolution, provided if reasonable and
-                      justifiable and in accordance with these Terms.
+                      Debes asegurarte de que tienes fondos suficientes en tu tarjeta de crédito y débito para cumplir
+                      con el pago de un Pedido. En la medida en que sea requerido, Dino's Pedidos asume la responsabilidad de
+                      los pagos realizados en nuestras Plataformas, incluyendo reembolsos, contracargos, cancelaciones
+                      y resolución de disputas, siempre que sea razonable y justificable y de acuerdo con estos
+                      Términos.
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Delivery, Pick-Up and Vendor Delivery
+                  Entrega, Recogida y Entrega por el Proveedor
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
-                    <Typography variant="subtitle2">Delivery Areas</Typography>
+                    <Typography variant="subtitle2">Áreas de Entrega</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      You understand that our Vendors offer their Goods in specific delivery areas and our Vendors vary
-                      from delivery area to delivery area. By entering your delivery address on the Platforms, you will
-                      see the Vendors that we make available to you at that time. Delivery areas may expand, shrink or
-                      change depending on weather and traffic conditions and situations of force majeure.{" "}
+                      Entiendes que nuestros Proveedores ofrecen sus Bienes en áreas de entrega específicas y nuestros
+                      Proveedores varían de un área de entrega a otra. Al ingresar tu dirección de entrega en las
+                      Plataformas, verás los Proveedores que te ofrecemos en ese momento. Las áreas de entrega pueden
+                      expandirse, reducirse o cambiar dependiendo de las condiciones climáticas y de tráfico y
+                      situaciones de fuerza mayor.{" "}
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Delivery Time</Typography>
+                    <Typography variant="subtitle2">Tiempo de Entrega</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Enatega shall deliver your Order to the delivery address provided by You. You may choose for your
-                      Order to be delivered “ASAP” or scheduled for a specific time. An estimated delivery time will be
-                      provided to you in your email confirmation but delivery times shall vary depending on factors that
-                      are not controlled by us (e.g. order quantity, distance, time of day (peak periods), weather
-                      conditions, traffic conditions, etc.). You can view the remaining delivery time of an Order when
-                      you click on ‘My orders’ on the Platforms. You acknowledge that the delivery time we provide is
-                      only an estimate and Orders may arrive earlier or later. To ensure that you do not miss a delivery
-                      of an Order, you should ensure that either you or someone is at the delivery location to receive
-                      the Order once an Order is placed. If your Order contains Alcohol or Tobacco (if applicable) and
-                      you or the recipient is or appears to be below the legal age, or fails to provide a valid proof of
-                      ID, enatega reserves the right not to deliver your Order to you.
+                      Dino's Pedidos entregará tu Pedido a la dirección de entrega que nos hayas proporcionado. Puedes elegir
+                      que tu Pedido sea entregado “LO ANTES POSIBLE” o programado para un horario específico. Se te
+                      proporcionará un tiempo estimado de entrega en tu correo electrónico de confirmación, pero los
+                      tiempos de entrega pueden variar dependiendo de factores que no controlamos (por ejemplo,
+                      cantidad de pedidos, distancia, hora del día (horas pico), condiciones climáticas, condiciones de
+                      tráfico, etc.). Puedes ver el tiempo restante de entrega de un Pedido cuando haces clic en ‘Mis
+                      pedidos’ en las Plataformas. Reconoces que el tiempo de entrega que te proporcionamos es solo una
+                      estimación y los Pedidos pueden llegar antes o después. Para asegurarte de no perder la entrega de
+                      un Pedido, debes asegurarte de que tú o alguien esté en el lugar de entrega para recibir el Pedido
+                      una vez que se haya realizado. Si tu Pedido contiene Alcohol o Tabaco (si aplica) y tú o el
+                      destinatario es o parece ser menor de la edad legal, o no proporciona una identificación válida,
+                      Dino's Pedidos se reserva el derecho de no entregar tu Pedido.
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Unsuccessful or Failed Deliveries </Typography>
+                    <Typography variant="subtitle2">Entregas Fallidas o No Exitosas</Typography>
                   </li>
                   <ul className={classes.circle}>
                     <li>
                       <Typography variant="subtitle2">
-                        In cases where we attempt to deliver an Order but we are unable to do so due to the reasons
-                        caused by you, including but not limited to:
+                        En casos en los que intentamos entregar un Pedido pero no podemos hacerlo debido a razones
+                        causadas por ti, incluyendo, pero no limitado a:
                       </Typography>
                       <ul>
                         <li>
                           <Typography variant="subtitle2">
-                            no one was present or available to receive the Order; or
+                            no había nadie presente o disponible para recibir el Pedido; o
                           </Typography>
                         </li>
                         <li>
                           <Typography variant="subtitle2">
-                            customer was uncontactable despite attempts to reach the customer via the phone number
-                            provided; or
+                            el cliente no pudo ser contactado a pesar de los intentos de contactarlo a través del número
+                            de teléfono proporcionado; o
                           </Typography>
                         </li>
                         <li>
                           <Typography variant="subtitle2">
-                            lack of appropriate or sufficient access to deliver the Order successfully;
+                            falta de acceso adecuado o suficiente para entregar el Pedido con éxito;
                           </Typography>
                         </li>
                         <li>
                           <Typography variant="subtitle2">
-                            lack of a suitable or secure location to leave the Order; or
+                            falta de un lugar adecuado o seguro para dejar el Pedido; o
                           </Typography>
                         </li>
                         <li>
                           <Typography variant="subtitle2">
-                            in the case of Restricted Goods, customer did not meet the statutory age requirements or
-                            delivery did not deem it safe or appropriate for the customer to receive the Restricted
-                            Goods.
+                            en el caso de Bienes Restringidos, el cliente no cumplió con los requisitos de edad legal o
+                            la entrega no consideró seguro o apropiado que el cliente recibiera los Bienes Restringidos.
                           </Typography>
                         </li>
                       </ul>
                       <li>
-                        <Typography variant="subtitle2">No-show Cancellations</Typography>
+                        <Typography variant="subtitle2">Cancelaciones por No Presentarse</Typography>
                         <Typography variant="subtitle2" className={classes.MV2}>
-                          If you remain uncontactable or fail to receive the Order within ten (10) minutes from the time
-                          the Order arrives at your delivery address, enatega reserves the right to cancel the Order
-                          without refund or remedy to you.
+                          Si sigues sin poder ser contactado o no recibes el Pedido dentro de los diez (10) minutos
+                          posteriores a la llegada del Pedido a tu dirección de entrega, Dino's Pedidos se reserva el derecho
+                          de cancelar el Pedido sin reembolso o remedio para ti.
                         </Typography>
                       </li>
                     </li>
                   </ul>
                   <li>
-                    <Typography variant="subtitle2">Wrong Order, Missing Items, Defective Goods</Typography>
+                    <Typography variant="subtitle2">Pedido Incorrecto, Artículos Faltantes, Bienes Defectuosos</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      Upon receipt of your Order, if you discover that there are issues with your Order (e.g. wrong
-                      order, defective order, or missing items) please contact customer support via one of the methods
-                      indicated in Clause 1.3 above immediately. In some cases, enatega may request for photographic
-                      proof and/or additional information to properly investigate the issue with your Order. If we
-                      determine that the Order and/or Goods you received are not of satisfactory condition or quality,
-                      we will compensate you for your Order or parts of your Order.
+                      Al recibir tu Pedido, si descubres que hay problemas con tu Pedido (por ejemplo, pedido
+                      incorrecto, pedido defectuoso o artículos faltantes), por favor contacta al soporte al cliente a
+                      través de uno de los métodos indicados en la Cláusula 1.3 anterior de inmediato. En algunos
+                      casos, Dino's Pedidos puede solicitar pruebas fotográficas y/o información adicional para investigar
+                      adecuadamente el problema con tu Pedido. Si determinamos que el Pedido y/o los Bienes que
+                      recibiste no están en condiciones o calidad satisfactorias, te compensaremos por tu Pedido o
+                      partes de tu Pedido.
                     </Typography>
                     <li>
-                      <Typography variant="subtitle2">Order Pick-Up</Typography>
+                      <Typography variant="subtitle2">Recogida de Pedidos</Typography>
                     </li>
                     <ul className={classes.circle}>
                       <li>
                         <Typography variant="subtitle2">
-                          Where available, you will have the option of collecting your Order in-person directly from the
-                          Vendor’s premises ("<b>Pick-Up</b>") instead of having the Order delivered to You. Your email
-                          confirmation will indicate the time for you to Pick-Up the Order (“Collection Time”). The
-                          Vendor will prepare the Order by the Collection Time. In some cases, a reasonable delay may be
-                          expected. The Vendor agrees to hold the Order for you at the Vendor’s premises for no more
-                          than a reasonable period of twenty (20) minutes from the Collection Time (“<b>Holding Time</b>
-                          ”) and shall not be obliged to provide the Order to you if you fail to Pick-Up your Order
-                          within the Holding Time.
+                          Cuando esté disponible, tendrás la opción de recoger tu Pedido en persona directamente en las
+                          instalaciones del Proveedor ("<b>Recogida</b>") en lugar de que el Pedido te sea entregado. Tu
+                          correo electrónico de confirmación indicará el horario para que recojas el Pedido (“Horario de
+                          Recogida”). El Proveedor preparará el Pedido para el Horario de Recogida. En algunos casos,
+                          puede haber un retraso razonable. El Proveedor acepta mantener el Pedido para ti en sus
+                          instalaciones por no más de un período razonable de veinte (20) minutos a partir del Horario de
+                          Recogida (“<b>Tiempo de Espera</b>”) y no estará obligado a proporcionarte el Pedido si no
+                          lo recoges dentro del Tiempo de Espera.
                         </Typography>
                       </li>
                       <li>
                         <Typography variant="subtitle2">
-                          In the event of unreasonable delays in Pick-Up attributable to you, you bear the risk of any
-                          damage or loss of Goods or any deterioration in quality or change in condition of the Goods
-                          (e.g. changes in the temperature fit for consumption). In this case, you shall not be entitled
-                          to a replacement, refund or replacement of the Goods. You alone are responsible for inspecting
-                          the Goods/Order when you Pick-Up your Order and shall report any issues and/or defects to the
-                          Vendor before leaving the Vendor’s premises.
+                          En caso de retrasos irrazonables en la Recogida atribuibles a ti, asumes el riesgo de cualquier
+                          daño o pérdida de los Bienes o cualquier deterioro en la calidad o cambio en la condición de
+                          los Bienes (por ejemplo, cambios en la temperatura adecuada para el consumo). En este caso, no
+                          tendrás derecho a un reemplazo, reembolso o sustitución de los Bienes. Eres el único
+                          responsable de inspeccionar los Bienes/Pedido cuando recoges tu Pedido y debes informar
+                          cualquier problema y/o defecto al Proveedor antes de salir de sus instalaciones.
                         </Typography>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Vendor Delivery</Typography>
+                    <Typography variant="subtitle2">Entrega por el Proveedor</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      In some cases, our Vendors will deliver the Order to you (“Vendor Delivery”). While we will use
-                      reasonable efforts to provide prior notice to you on Vendor Delivery, this may not always be
-                      possible. Where Vendor Delivery applies, we may ask you to contact the Vendor directly in the
-                      event of issues or delays in your delivery. Enatega shall not be responsible in any way for Orders
-                      or Goods that are delivered by Vendors.{" "}
+                      En algunos casos, nuestros Proveedores entregarán el Pedido (“Entrega por el Proveedor”). Aunque
+                      haremos esfuerzos razonables para notificarte con anticipación sobre la Entrega por el Proveedor,
+                      esto no siempre será posible. Cuando se aplique la Entrega por el Proveedor, podemos pedirte que
+                      contactes directamente al Proveedor en caso de problemas o retrasos en tu entrega. Dino's Pedidos no será
+                      responsable de ninguna manera por los Pedidos o Bienes que sean entregados por los Proveedores.{" "}
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Vouchers, Discounts and Promotions
+                  Cupones, Descuentos y Promociones
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
                     <Typography variant="subtitle2">
-                      From time to time, enatega may run marketing and promotional campaigns which offer voucher codes,
-                      discounts, and other promotional offers to be used on the Platforms (“<b>Vouchers</b>”). Vouchers
-                      are subject to validity periods, redemption periods, and in certain cases, may only be used once.
+                      De vez en cuando, Dino's Pedidos puede realizar campañas de marketing y promocionales que ofrecen
+                      códigos de cupones, descuentos y otras ofertas promocionales para ser utilizados en las
+                      Plataformas (“<b>Cupones</b>”). Los Cupones están sujetos a períodos de validez, períodos de
+                      canje y, en ciertos casos, solo pueden ser utilizados una vez.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Unless otherwise stated, Vouchers can only be used on our Platforms.{" "}
+                      A menos que se indique lo contrario, los Cupones solo pueden ser utilizados en nuestras
+                      Plataformas.{" "}
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Vouchers cannot be exchanged for cash.</Typography>
+                    <Typography variant="subtitle2">Los Cupones no pueden ser canjeados por efectivo.</Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      Enatega reserves the right to void, discontinue or reject the use of any Voucher without prior
-                      notice Individual restaurants terms & conditions apply
+                      Dino's Pedidos se reserva el derecho de anular, descontinuar o rechazar el uso de cualquier Cupón sin
+                      previo aviso. Se aplican los términos y condiciones individuales de los restaurantes.
                     </Typography>
                   </li>
                   <li>
                     <Typography variant="subtitle2">
-                      We may exclude certain Vendors from the use of Vouchers at any time without prior notice to you.
+                      Podemos excluir a ciertos Proveedores del uso de Cupones en cualquier momento sin previo aviso.
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Representations, Warranties and Limitation of Liabilities
+                  Declaraciones, Garantías y Limitación de Responsabilidades
                 </Typography>
                 <ul className={classes.bullet}>
                   <li>
-                    <Typography variant="subtitle2">Representations and Warranties</Typography>
+                    <Typography variant="subtitle2">Declaraciones y Garantías</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      You acknowledge and agree that the content on the Platforms are provided on an “as is” and “as
-                      available” basis, and that your use of or reliance upon the Platforms and any content, goods,
-                      products or services accessed or obtained thereby is at your sole risk and discretion. While
-                      enatega makes reasonable efforts to ensure the provision of the Platforms and the services we
-                      offer, are available at all times, we do not warrant or represent that the Platforms shall be
-                      provided in a manner which is secure, timely, uninterrupted, error-free, free of technical
-                      difficulties, defects or viruses. Please expect temporary interruptions of the Platform due to
-                      scheduled or regular system maintenance work, downtimes attributable to internet or electronic
-                      communications or events of force majeure.
+                      Reconoces y aceptas que el contenido en las Plataformas se proporciona “tal cual” y “según
+                      disponibilidad”, y que tu uso o dependencia de las Plataformas y cualquier contenido, bienes,
+                      productos o servicios accedidos u obtenidos a través de ellas es bajo tu propio riesgo y
+                      discreción. Aunque Dino's Pedidos hace esfuerzos razonables para garantizar que las Plataformas y los
+                      servicios que ofrecemos estén disponibles en todo momento, no garantizamos ni representamos que
+                      las Plataformas se proporcionarán de manera segura, oportuna, ininterrumpida, libre de errores,
+                      libre de dificultades técnicas, defectos o virus. Espera interrupciones temporales de la
+                      Plataforma debido a trabajos de mantenimiento programados o regulares del sistema, tiempos de
+                      inactividad atribuibles a internet o comunicaciones electrónicas o eventos de fuerza mayor.
                     </Typography>
-                    <Typography variant="subtitle2">Limitation of Liability</Typography>
+                    <Typography variant="subtitle2">Limitación de Responsabilidad</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      To the extent permitted by law, enatega (which shall include its employees, directors, agents,
-                      representatives, affiliates and parent company) exclude all liability (whether arising in
-                      contract, in negligence or otherwise) for loss or damage which you or any third party may incur in
-                      connection with our Platforms, our services, and any website linked to our Platforms and any
-                      content or material posted on it. Your exclusive remedy with respect to your use of the Platforms
-                      is to discontinue your use of the Platforms. The enatega entities, their agents, representatives,
-                      and service providers shall not be liable for any indirect, special, incidental, consequential, or
-                      exemplary damages arising from your use of the Platforms or for any other claim related in any way
-                      to your use of the Platforms. These exclusions for indirect, special, consequential, and exemplary
-                      damages include, without limitation, damages for lost profits, lost data, loss of goodwill, work
-                      stoppage, work stoppage, computer failure, or malfunction, or any other commercial damages or
-                      losses, even if the enatega entities, their agents, representatives, and service providers have
-                      been advised of the possibility thereof and regardless of the legal or equitable theory upon which
-                      the claim is based. Because some states or jurisdictions do not allow the exclusion or the
-                      limitation of liability for consequential or incidental damages, in such states or jurisdictions,
-                      enatega, the enatega entities, its agents, representatives and service providers' liability shall
-                      be limited to the extent permitted by law.
+                      En la medida permitida por la ley, Dino's Pedidos (lo que incluye a sus empleados, directores, agentes,
+                      representantes, afiliados y empresa matriz) excluye toda responsabilidad (ya sea que surja por
+                      contrato, negligencia o de otra manera) por pérdidas o daños que tú o cualquier tercero puedan
+                      incurrir en relación con nuestras Plataformas, nuestros servicios y cualquier sitio web vinculado
+                      a nuestras Plataformas y cualquier contenido o material publicado en él. Tu único recurso con
+                      respecto a tu uso de las Plataformas es descontinuar su uso. Las entidades de Dino's Pedidos, sus
+                      agentes, representantes y proveedores de servicios no serán responsables por ningún daño indirecto,
+                      especial, incidental, consecuencial o ejemplar que surja de tu uso de las Plataformas o por
+                      cualquier otro reclamo relacionado de alguna manera con tu uso de las Plataformas. Estas
+                      exclusiones de daños indirectos, especiales, consecuenciales y ejemplares incluyen, sin
+                      limitación, daños por pérdida de beneficios, pérdida de datos, pérdida de buena voluntad,
+                      interrupción del trabajo, falla o mal funcionamiento de la computadora, o cualquier otro daño o
+                      pérdida comercial, incluso si las entidades de Dino's Pedidos, sus agentes, representantes y proveedores
+                      de servicios han sido informados de la posibilidad de tales daños y sin importar la teoría legal o
+                      equitativa sobre la cual se base el reclamo. Debido a que algunos estados o jurisdicciones no
+                      permiten la exclusión o limitación de responsabilidad por daños consecuenciales o incidentales, en
+                      dichos estados o jurisdicciones, la responsabilidad de Dino's Pedidos, las entidades de Dino's Pedidos, sus
+                      agentes, representantes y proveedores de servicios estará limitada en la medida permitida por la
+                      ley.
                     </Typography>
                   </li>
                   <li>
-                    <Typography variant="subtitle2">Vendor’s representations</Typography>
+                    <Typography variant="subtitle2">Declaraciones del Proveedor</Typography>
                     <Typography variant="subtitle2" className={classes.MV2}>
-                      Enatega shall neither be liable for actions or omissions of the Vendor nor you in regard to
-                      provision of the Goods and where Vendor Delivery applies to your Order. Enatega does not assume
-                      any liability for the quantity, quality, condition or other representations of the Goods and/or
-                      services provided by Vendors or guarantee the accuracy or completeness of the information
-                      (including menu information, photos and images of the Goods) displayed on the Vendor’s
-                      listing/offering on the Platform. Nothing in these Terms shall exclude Vendor’s liability for
-                      death or personal injury arising from Vendor’s gross negligence or willful misconduct.
+                      Dino's Pedidos no será responsable de las acciones u omisiones del Proveedor ni de ti en relación con la
+                      provisión de los Bienes y cuando se aplique la Entrega por el Proveedor a tu Pedido. Dino's Pedidos no
+                      asume ninguna responsabilidad por la cantidad, calidad, condición u otras representaciones de los
+                      Bienes y/o servicios proporcionados por los Proveedores ni garantiza la precisión o integridad de
+                      la información (incluyendo información del menú, fotos e imágenes de los Bienes) mostrada en la
+                      lista/oferta del Proveedor en la Plataforma. Nada en estos Términos excluirá la responsabilidad
+                      del Proveedor por muerte o lesiones personales resultantes de la negligencia grave o mala conducta
+                      intencional del Proveedor.
                     </Typography>
                   </li>
                 </ul>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Vendor Liability
+                  Responsabilidad del Proveedor
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  Vendors are responsible for the preparation, condition and quality of Goods. In cases of Vendor
-                  Delivery, Vendors are responsible for delivery of the Goods and/or Orders. Enatega shall not be liable
-                  for any loss or damage arising from your contractual relationship with the Vendor.
+                  Los Proveedores son responsables de la preparación, condición y calidad de los Bienes. En casos de
+                  Entrega por el Proveedor, los Proveedores son responsables de la entrega de los Bienes y/o Pedidos.
+                  Dino's Pedidos no será responsable por ninguna pérdida o daño que surja de tu relación contractual con el
+                  Proveedor.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Personal Data (Personal Information) Protection
+                  Protección de Datos Personales (Información Personal)
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  You agree and consent to enatega and any of its affiliate companies collecting, using, processing and
-                  disclosing your Personal Data in accordance with these Terms and as further described in our Privacy
-                  Policy. Our Privacy Policy is available via the links on our Platforms, and shall form a part of these
-                  Terms.
+                  Aceptas y consientes que Dino's Pedidos y cualquiera de sus empresas afiliadas recopilen, usen, procesen y
+                  divulguen tus Datos Personales de acuerdo con estos Términos y como se describe más detalladamente en
+                  nuestra Política de Privacidad. Nuestra Política de Privacidad está disponible a través de los enlaces
+                  en nuestras Plataformas y formará parte de estos Términos.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Indemnity
+                  Indemnización
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  You agree to indemnify, defend, hold harmless enatega, its directors, officers, employees,
-                  representatives, agents, and affiliates, from any and all third party claims, liability, damages
-                  and/or costs (including but not limited to, legal fees) arising from your use of the Platforms or your
-                  breach of these Terms.
+                  Aceptas indemnizar, defender y mantener indemne a Dino's Pedidos, sus directores, funcionarios, empleados,
+                  representantes, agentes y afiliados, de cualquier y toda reclamación de terceros, responsabilidad,
+                  daños y/o costos (incluyendo, pero no limitado a, honorarios legales) que surjan de tu uso de las
+                  Plataformas o de tu incumplimiento de estos Términos.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Third Party Links and Websites
+                  Enlaces y Sitios Web de Terceros
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  The Platforms may contain links to other third party websites and by clicking on these links, you
-                  agree to do so at your own risk. Enatega does not control or endorse these third party websites or
-                  links and shall not be responsible for the content of these linked pages. Enatega accepts no liability
-                  or responsibility for any loss or damage which may be suffered by you in relation to your access and
-                  use of these third party links and websites.
+                  Las Plataformas pueden contener enlaces a otros sitios web de terceros y, al hacer clic en estos
+                  enlaces, aceptas hacerlo bajo tu propio riesgo. Dino's Pedidos no controla ni respalda estos sitios web de
+                  terceros o enlaces y no será responsable del contenido de estas páginas vinculadas. Dino's Pedidos no acepta
+                  responsabilidad ni asume obligación alguna por cualquier pérdida o daño que puedas sufrir en relación
+                  con tu acceso y uso de estos enlaces y sitios web de terceros.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Termination
+                  Terminación
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  Enatega has the right to terminate, suspend or delete your account and access to the Platforms,
-                  including any delivery service we provide to you in respect of an Order, for any reason, including,
-                  without limitation, if enatega, in its sole discretion, considers your use to be unacceptable, or in
-                  the event of any breach by you of the Terms. Enatega may, but shall be under no obligation to, provide
-                  you a warning prior to termination of your use of the Websites.
+                  Dino's Pedidos tiene el derecho de terminar, suspender o eliminar tu cuenta y acceso a las Plataformas,
+                  incluyendo cualquier servicio de entrega que te proporcionemos en relación con un Pedido, por
+                  cualquier motivo, incluyendo, sin limitación, si Dino's Pedidos, a su exclusiva discreción, considera que tu
+                  uso es inaceptable, o en caso de cualquier incumplimiento por tu parte de los Términos. Dino's Pedidos
+                  puede, pero no está obligada a, proporcionarte una advertencia antes de terminar tu uso de los Sitios
+                  Web.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Amendments
+                  Enmiendas
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  Enatega may amend these Terms at any time in its sole discretion. The amended Terms shall be effective
-                  immediately upon posting and you agree to the new Terms by continued use of the Platforms. It is your
-                  responsibility to check the Terms regularly. If you do not agree with the amended Terms, whether in
-                  whole or in part, you must stop using the Platforms immediately.
+                  Dino's Pedidos puede enmendar estos Términos en cualquier momento a su exclusiva discreción. Los Términos
+                  enmendados serán efectivos inmediatamente después de su publicación y aceptas los nuevos Términos al
+                  continuar usando las Plataformas. Es tu responsabilidad revisar los Términos regularmente. Si no
+                  estás de acuerdo con los Términos enmendados, ya sea en su totalidad o en parte, debes dejar de usar
+                  las Plataformas inmediatamente.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Severability
+                  Divisibilidad
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  If any provision of these Terms of Use is found to be invalid by any court having competent
-                  jurisdiction, the invalidity of such provision shall not affect the validity of the remaining
-                  provisions of these Terms of Use, which shall remain in full force and effect. No waiver of any
-                  provision in these Terms of Use shall be deemed a further or continuing waiver of such provision or
-                  any other provision.
+                  Si cualquier disposición de estos Términos de Uso es considerada inválida por cualquier tribunal con
+                  jurisdicción competente, la invalidez de dicha disposición no afectará la validez de las disposiciones
+                  restantes de estos Términos de Uso, las cuales permanecerán en pleno vigor y efecto. Ninguna renuncia
+                  a cualquier disposición en estos Términos de Uso será considerada una renuncia adicional o continua de
+                  dicha disposición o cualquier otra disposición.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Governing Law
+                  Ley Aplicable
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  These Terms shall be governed and construed in accordance with the laws of the country / courts of
-                  jurisdiction.
+                  Estos Términos se regirán e interpretarán de acuerdo con las leyes del país / tribunales de
+                  jurisdicción.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Contact Us
+                  Contáctanos
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  If you wish to contact us regarding any questions or comments you may have, please send an email to
-                  our customer support email or via our in-app customer support chat feature.
+                  Si deseas contactarnos con respecto a cualquier pregunta o comentario que puedas tener, por favor
+                  envía un correo electrónico a nuestro correo de soporte al cliente o a través de nuestra función de
+                  chat de soporte al cliente en la aplicación.
                 </Typography>
               </li>
               <li>
                 <Typography variant="subtitle2" className={classes.boldText}>
-                  Prevailing Language
+                  Idioma Prevalente
                 </Typography>
                 <Typography variant="subtitle2" className={classes.MV3}>
-                  In the event of a dispute as to the Terms, the English version shall prevail. The English language
-                  version of these Terms shall control in all respects and shall prevail in case of any inconsistencies
-                  with translated versions.
+                  En caso de disputa sobre los Términos, la versión en inglés prevalecerá. La versión en inglés de estos
+                  Términos controlará en todos los aspectos y prevalecerá en caso de cualquier inconsistencia con las
+                  versiones traducidas.
                 </Typography>
               </li>
             </ol>

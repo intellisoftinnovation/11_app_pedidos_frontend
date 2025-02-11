@@ -6,10 +6,11 @@ import Typography from "@mui/material/Typography";
 import React from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import useStyle from "./styles";
-import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import { useTheme } from "@emotion/react";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import PersonIcon from "@mui/icons-material/Person";
+import logo from '../../../assets/images/Logo-dinos.png'
+
 import { useTranslation } from "react-i18next";
 
 function LoginDesktopHeader({ title, showIcon, showCart = false }) {
@@ -24,19 +25,21 @@ function LoginDesktopHeader({ title, showIcon, showCart = false }) {
           to={location.pathname === "/checkout" ? "/restaurant-list" : "/"}
           className={classes.linkDecoration}
         >
-          <Logo height={50} width={50} />
-
-          <Typography
+          {/* <LogoSvg height={50} width={50} /> */}
+          
+          <img src={logo} height={70} width={140} />
+  
+          {/* <Typography
             variant="h6"
             color={theme.palette.common.black}
             className={classes.font700}
             style={{ marginLeft: "8px" }}
           >
             {title}
-          </Typography>
+          </Typography> */}
         </RouterLink>
-        <Box className={classes.flex}>
-          {showIcon && (
+        {/* <Box className={classes.flex}>
+          {(showIcon && false )&&  (
             <>
               <Divider flexItem orientation="vertical" light />
               <RouterLink to={"/login"} className={classes.linkDecoration}>
@@ -65,7 +68,7 @@ function LoginDesktopHeader({ title, showIcon, showCart = false }) {
               </RouterLink>
             </Box>
           )}
-        </Box>
+        </Box> */}
       </Toolbar>
     </AppBar>
   );

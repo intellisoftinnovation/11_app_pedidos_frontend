@@ -24,13 +24,11 @@ const UPDATEUSER = gql`
   ${updateUser}
 `;
 const languageTypes = [
-  { value: "English", code: "en", index: 0 },
-  { value: "français", code: "fr", index: 1 },
-  { value: "ភាសាខ្មែរ", code: "km", index: 2 },
-  { value: "中文", code: "zh", index: 3 },
-  { value: "Deutsche", code: "de", index: 4 },
-  { value: "arabic", code: "ar", index: 5 },
-];
+  { value: 'Español', code: 'es', index: 0 },
+  // { value: 'Arabic', code: 'ar', index: 1 },
+  { value: 'English', code: 'en', index: 1 },
+  // { value: 'Hebrew', code: 'he', index: 3 },
+]
 function LanguageCard() {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -59,7 +57,7 @@ function LanguageCard() {
 
   const currentLang = localStorage.getItem("enatega-language");
   const [selectedLanguage, setSelectedLanguage] = useState(
-    currentLang ? currentLang : "en"
+    currentLang ? currentLang : "es"
   );
   console.log(selectedLanguage);
 
