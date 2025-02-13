@@ -1,22 +1,22 @@
-import { Box, Divider } from "@mui/material";
+// import { Box, Divider } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import React from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import useStyle from "./styles";
-import { useTheme } from "@emotion/react";
-import LocalMallIcon from "@mui/icons-material/LocalMall";
-import PersonIcon from "@mui/icons-material/Person";
+// import { useTheme } from "@emotion/react";
+// import LocalMallIcon from "@mui/icons-material/LocalMall";
+// import PersonIcon from "@mui/icons-material/Person";
 import logo from '../../../assets/images/Logo-dinos.png'
 
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 function LoginDesktopHeader({ title, showIcon, showCart = false }) {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const classes = useStyle();
-  const theme = useTheme();
+  // const theme = useTheme();
   const location = useLocation();
   return (
     <AppBar elevation={0} position="fixed">
@@ -27,7 +27,7 @@ function LoginDesktopHeader({ title, showIcon, showCart = false }) {
         >
           {/* <LogoSvg height={50} width={50} /> */}
           
-          <img src={logo} height={70} width={140} />
+          <img src={logo} height={70} width={140} alt="alt"/>
   
           {/* <Typography
             variant="h6"

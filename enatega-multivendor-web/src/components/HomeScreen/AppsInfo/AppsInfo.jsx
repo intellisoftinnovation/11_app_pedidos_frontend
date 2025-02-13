@@ -2,7 +2,7 @@ import { Box, Grid } from "@mui/material";
 import { React } from "react";
 import OrderSection from "../../../assets/images/Platforma Dino 2.svg";
 import RiderSection from "../../../assets/images/RiderSection.svg";
-import RestuarantSection from "../../../assets/images/Platforma Dino 1.svg";
+import RestuarantSection from "../../../assets/images/RestuarantSection.svg";
 import useStyle from "./styles";
 import { useTranslation } from "react-i18next";
 
@@ -76,19 +76,19 @@ const AppsInfo = () => {
   ];
 
   let OrderButtons = [
-    {
-      text: "Order Online Now ",
-      color: "#5AC12F",
-      link: "/restaurant-list",
-      textColor: "white",
-    },
-    {
-      text: "Download Our App",
-      color: "white",
-      link: "https://play.google.com/store/apps/details?id=com.enatega.multivendor",
-      textColor: "green",
-      isOutline: true,
-    },
+    // {
+    //   text: "Order Online Now ",
+    //   color: "#5AC12F",
+    //   link: "/restaurant-list",
+    //   textColor: "white",
+    // },
+    // {
+    //   text: "Download Our App",
+    //   color: "white",
+    //   link: "https://play.google.com/store/apps/details?id=com.enatega.multivendor",
+    //   textColor: "green",
+    //   isOutline: true,
+    // },
   ];
   return (
     <Box className={classes.mainContainer}>

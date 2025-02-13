@@ -1,7 +1,7 @@
 import { Box, Typography, Grid,Button } from "@mui/material";
 import React from "react";
 import useStyle from "./styles.js";
-import DoublePhone from "../../../assets/images/DoublePhone.svg";
+import DoublePhone from "../../../assets/images/Dino app.png";
 import { useTranslation } from "react-i18next";
 import  appStore   from '../../../assets/images/appStore.svg'
 import playStore from '../../../assets/images/playStore.svg'

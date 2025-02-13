@@ -17,7 +17,7 @@ import CardComponent from "../../components/HomeScreen/CardComponent/CardCompone
 import PlatformFeatures from "../../components/HomeScreen/PlatFormFeatures/PlatformFeatures";
 import AppsInfo from "../../components/HomeScreen/AppsInfo/AppsInfo";
 import OrderFavorites from "../../components/HomeScreen/OrderFavorites/OrderFavorites";
-import Faq from "../../components/HomeScreen/Faqs/Faq";
+// import Faq from "../../components/HomeScreen/Faqs/Faq";
 
 function Home() {
   const classes = useStyles();

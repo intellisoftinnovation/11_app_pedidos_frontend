@@ -47,7 +47,7 @@ function DHeader({
           }
           className={classes.linkDecoration}
         >
-           <img src={logo} height={70} width={140} />
+           <img src={logo} height={70} width={140} alt ="" />
 
           {/* <Typography
             variant="h6"
