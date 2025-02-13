@@ -100,7 +100,7 @@ function Login(props) {
                       ]}
                       placeholderTextColor={currentTheme.fontSecondColor}
                       // value={email}
-                      defaultValue='demo-customer@enatega.com'
+                      defaultValue=''
                       onChangeText={e => setEmail(e.toLowerCase().trim())}
                     />
                     {emailError !== null && (

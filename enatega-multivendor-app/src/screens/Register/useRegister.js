@@ -28,16 +28,17 @@ const useRegister = () => {
   const [emailError, setEmailError] = useState(null)
   const [passwordError, setPasswordError] = useState(null)
   const [phoneError, setPhoneError] = useState(null)
-  const [countryCode, setCountryCode] = useState('PK')
+  const [countryCode, setCountryCode] = useState('PE')
   const [country, setCountry] = useState({
-    callingCode: ['92'],
-    cca2: 'PK',
-    currency: ['PKR'],
-    flag: 'flag-pk',
-    name: 'Pakistan',
-    region: 'Asia',
-    subregion: 'Southern Asia'
-  })
+    callingCode: ['51'],  
+    cca2: 'PE',
+    currency: ['PEN'],
+    flag: 'flag-pe', 
+    name: 'Perú', 
+    region: 'América del Sur', 
+    subregion: 'América del Sur' 
+  });
+
 
   const [phoneExist, { loading }] = useMutation(PHONE, {
     onCompleted,

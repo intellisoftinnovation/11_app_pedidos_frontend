@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next'
 import { SimpleLineIcons } from '@expo/vector-icons'
 import { useRoute } from '@react-navigation/native'
 import { scale } from '../../../utils/scaling'
+import TotpInput from '../../../components/TotpInput'
 
 function EmailOtp(props) {
   const {
@@ -77,12 +78,19 @@ function EmailOtp(props) {
             >
               {t('otpSentToEmail')}
             </TextDefault>
-            <TextDefault H5 bold  textColor={currentTheme.newFontcolor}>
+            <TextDefault H5 bold textColor={currentTheme.newFontcolor}>
               {userData.email}
             </TextDefault>
           </View>
           <View>
-            <OTPInputView
+            <TotpInput
+              code={otp || ""}
+              onCodeChanged={(code) => setOtp(code)}
+              onCodeFilled={(code) => {
+                onCodeFilled(code)
+              }}
+            />
+            {/* <OTPInputView
               pinCount={6}
               style={styles().otpInput}
               codeInputFieldStyle={[
@@ -99,7 +107,7 @@ function EmailOtp(props) {
                 onCodeFilled(code)
               }}
               editable
-            />
+            /> */}
             {otpError && (
               <TextDefault
                 style={styles(currentTheme).error}
@@ -143,8 +151,8 @@ function EmailOtp(props) {
             <Spinner
               backColor={currentTheme.color3}
               spinnerColor={currentTheme.color3}
-                size='small'
-              />
+              size='small'
+            />
           ) : (
             <TouchableOpacity
               activeOpacity={0.7}

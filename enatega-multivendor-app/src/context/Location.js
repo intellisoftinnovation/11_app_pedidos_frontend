@@ -13,7 +13,7 @@ export const LocationContext = createContext()
 
 export const LocationProvider = ({ children }) => {
   const [location, setLocation] = useState(null)
-  const [country, setCountry] = useState('IL')
+  const [country, setCountry] = useState('PE')
   const [cities, setCities] = useState([])
   const [loadingCountry, setLoadingCountry] = useState(true)
   const [errorCountry, setErrorCountry] = useState('')
@@ -61,17 +61,21 @@ export const LocationProvider = ({ children }) => {
     }
     fetchCountry()
   }, [])
-
+  console.log(`${GET_CITIES}, {
+    variables: { iso: ${country} || 'US' },
+    skip: !country // Skip the query if country is not provided
+  }`)
   const { loading, error, data } = useQuery(GET_CITIES, {
     variables: { iso: country || 'US' },
     skip: !country // Skip the query if country is not provided
   })
-  //console.log('cities Data inside context', cities)
-  // useEffect(() => {
-  //   if (!loading && !error && data) {
-  //     setCities(data.getCountryByIso.cities || [])
-  //   }
-  // }, [loading, error, data])
+  console.log('cities Data inside context', cities)
+  useEffect(() => {
+    if (!loading && !error && data) {
+      setCities(data.getCountryByIso.cities || [])
+    }
+    // console.log(`Loading: ${loading} , error: ${error} , data: ${data}`)
+  }, [loading, error, data])
   return (
     <LocationContext.Provider
       value={{

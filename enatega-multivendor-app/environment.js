@@ -12,9 +12,13 @@ const useEnvVars = (env = Updates.channel) => {
 
   if (env === 'production' || env === 'staging') {
     console.log({
-      GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-      WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
-      SERVER_URL: 'https://gql.tester-pruebas.com/',
+      // GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
+      // WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+      // SERVER_URL: 'https://gql.tester-pruebas.com/',
+
+      // GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+      // WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
+      // SERVER_URL: 'https://api.dinospedidos.com/',
 
       // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
       // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
@@ -32,9 +36,13 @@ const useEnvVars = (env = Updates.channel) => {
     })
 
     return {
-      GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-      WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
-      SERVER_URL: 'https://gql.tester-pruebas.com/',
+      // GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
+      // WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+      // SERVER_URL: 'https://gql.tester-pruebas.com/',
+
+      GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+      WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
+      SERVER_URL: 'https://api.dinospedidos.com/',
 
       // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
       // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
@@ -53,9 +61,13 @@ const useEnvVars = (env = Updates.channel) => {
   }
 
   return {
-    GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-    WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
-    SERVER_URL: 'https://gql.tester-pruebas.com/',
+    // GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
+    // WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+    // SERVER_URL: 'https://gql.tester-pruebas.com/',
+
+    GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+      WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
+      SERVER_URL: 'https://api.dinospedidos.com/',
 
     // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
     // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',

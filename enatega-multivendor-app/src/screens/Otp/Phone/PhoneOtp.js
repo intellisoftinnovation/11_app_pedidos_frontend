@@ -14,6 +14,7 @@ import { alignment } from '../../../utils/alignment'
 import screenOptions from '../screenOptions'
 import OTPInputView from '@twotalltotems/react-native-otp-input'
 import usePhoneOtp from './usePhoneOtp'
+import TotpInput from '../../../components/TotpInput'
 import { useTranslation } from 'react-i18next'
 import { Ionicons } from '@expo/vector-icons'
 import { scale } from '../../../utils/scaling'
@@ -57,13 +58,13 @@ function PhoneOtp(props) {
       <View style={styles(currentTheme).mainContainer}>
         <View style={styles().subContainer}>
           <View style={styles().logoContainer}>
-            <Ionicons name='phone-portrait-outline' size={30}  color={currentTheme.newIconColor}/>
+            <Ionicons name='phone-portrait-outline' size={30} color={currentTheme.newIconColor} />
           </View>
           <View>
             <TextDefault
               H3
               bolder
-               textColor={currentTheme.newFontcolor}
+              textColor={currentTheme.newFontcolor}
               style={{
                 ...alignment.MTlarge,
                 ...alignment.MBmedium
@@ -86,7 +87,14 @@ function PhoneOtp(props) {
             </TextDefault>
           </View>
           <View>
-            <OTPInputView
+            <TotpInput
+              code={otp || ""}
+              onCodeChanged={(code) => setOtp(code)}
+              onCodeFilled={(code) => {
+                onCodeFilled(code)
+              }}
+            />
+            {/* <OTPInputView
               pinCount={6}
               style={styles().otpInput}
               codeInputFieldStyle={[
@@ -103,7 +111,7 @@ function PhoneOtp(props) {
                 onCodeFilled(code)
               }}
               editable
-            />
+            /> */}
             {otpError && (
               <TextDefault
                 style={styles().error}
@@ -133,8 +141,8 @@ function PhoneOtp(props) {
           <View>
             {loading || updateUserLoading ? (
               <Spinner
-              backColor={currentTheme.color3}
-              spinnerColor={currentTheme.color3}
+                backColor={currentTheme.color3}
+                spinnerColor={currentTheme.color3}
                 size='small'
               />
             ) : (
