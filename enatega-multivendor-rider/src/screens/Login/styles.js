@@ -78,14 +78,14 @@ export default {
     color: colors.primary
   },
   btn: {
-    width: '70%',
-    height: height * 0.06,
+    width: '80%',
+    height: height * 0.07,
     alignItems: 'center',
     backgroundColor: colors.black,
     color: colors.white,
     alignSelf: 'center',
     borderRadius: 10,
-    marginTop: height * 0.15
+    marginTop: 20
   },
   pt5: {
     paddingTop: 5

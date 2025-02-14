@@ -9,8 +9,8 @@ const getEnvVars = (env = Updates.releaseChannel) => {
 
   if (env === 'production' || env === 'staging') {
     return {
-      GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-      WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+      GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+      WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
 
       // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
       // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
@@ -19,8 +19,8 @@ const getEnvVars = (env = Updates.releaseChannel) => {
     }
   }
   return {
-    GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-    WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+    GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+    WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
 
     // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
     // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',

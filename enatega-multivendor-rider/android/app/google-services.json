@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "573243150729",
-    "project_id": "dinospedidos",
-    "storage_bucket": "dinospedidos.firebasestorage.app"
+    "project_number": "434671372246",
+    "project_id": "dinospedidosrider",
+    "storage_bucket": "dinospedidosrider.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573243150729:android:8a237af7a05bee1a545158",
+        "mobilesdk_app_id": "1:434671372246:android:82e9c4953bf47ad7970677",
         "android_client_info": {
-          "package_name": "com.dinospedidos.org"
+          "package_name": "com.dinospedidos.rider"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com",
+          "client_id": "434671372246-k4qu7oum5eid73atl295dvephqoilgge.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No"
+          "current_key": "AIzaSyDC-yDxbhaXNL6NxzDiMvKRvm6TTLgkB4M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com",
+              "client_id": "434671372246-k4qu7oum5eid73atl295dvephqoilgge.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

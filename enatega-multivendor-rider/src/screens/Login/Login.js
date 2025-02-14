@@ -27,8 +27,8 @@ export default function Login() {
     onSubmit,
     showPassword,
     setShowPassword,
-    loading,
-    height
+    loading
+    // height
   } = useLogin()
 
   const { t } = useTranslation()
@@ -42,7 +42,7 @@ export default function Login() {
     <SafeAreaView style={[styles.flex, styles.bgColor]}>
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ height: height * 1 }}
+        // contentContainerStyle={{ height: height * 1 }}
         style={styles.container}>
         <Image
           source={RiderLogin}
