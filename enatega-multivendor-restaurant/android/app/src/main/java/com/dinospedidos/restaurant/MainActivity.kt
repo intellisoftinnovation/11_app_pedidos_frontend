@@ -1,4 +1,4 @@
-package com.dinos.restaurant
+package com.dinospedidos.restaurant
 
 import android.os.Build
 import android.os.Bundle

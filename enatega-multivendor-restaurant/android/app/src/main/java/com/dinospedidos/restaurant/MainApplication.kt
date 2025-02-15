@@ -1,4 +1,4 @@
-package com.dinos.restaurant
+package com.dinospedidos.restaurant
 
 import android.app.Application
 import android.content.res.Configuration

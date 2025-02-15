@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "573243150729",
-    "project_id": "dinospedidos",
-    "storage_bucket": "dinospedidos.firebasestorage.app"
+    "project_number": "715084185392",
+    "project_id": "dinospedidosrestaurant",
+    "storage_bucket": "dinospedidosrestaurant.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573243150729:android:8a237af7a05bee1a545158",
+        "mobilesdk_app_id": "1:715084185392:android:fe84f7f0b247b549c1d2f5",
         "android_client_info": {
-          "package_name": "com.dinospedidos.org"
+          "package_name": "com.dinospedidos.restaurant"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com",
+          "client_id": "715084185392-n8ibvh68iuck8ac4btkiub3pn1fi95ln.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No"
+          "current_key": "AIzaSyC1JkrYUECJi7Iu5GVJHpWwwtDtQle9rHU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com",
+              "client_id": "715084185392-n8ibvh68iuck8ac4btkiub3pn1fi95ln.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

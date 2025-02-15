@@ -16,25 +16,25 @@ const getEnvVars = (env = Updates.releaseChannel) => {
     return {
       // GRAPHQL_URL: 'https://enatega-multivendor.up.railway.app/graphql',
       // WS_GRAPHQL_URL: 'wss://enatega-multivendor.up.railway.app/graphql',
-      GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-      WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+      GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+      WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
 
       // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
       // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
 
-      SENTRY_DSN: configuration.restaurantAppSentryUrl
+      SENTRY_DSN: 'https://52a0959de1dcdb4a76895f69a756e4cf@o4508823999873024.ingest.us.sentry.io/4508824007213056'
     }
   }
   return {
     // GRAPHQL_URL: 'https://enatega-multivendor.up.railway.app/graphql',
     // WS_GRAPHQL_URL: 'wss://enatega-multivendor.up.railway.app/graphql',
-    GRAPHQL_URL: 'https://gql.tester-pruebas.com/graphql',
-    WS_GRAPHQL_URL: 'ws://gql.tester-pruebas.com/graphql',
+    GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
+    WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
 
     // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
     // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
-
-    SENTRY_DSN: configuration.restaurantAppSentryUrl
+    // HardCode sentry DNS
+    SENTRY_DSN: 'https://52a0959de1dcdb4a76895f69a756e4cf@o4508823999873024.ingest.us.sentry.io/4508824007213056'
     // SENTRY_DSN:
     //   'https://91b55f514a2c4708845789d6e79abf10@o1103026.ingest.sentry.io/6131933'
   }
