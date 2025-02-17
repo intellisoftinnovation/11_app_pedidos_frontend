@@ -30,8 +30,10 @@ const LOGIN = gql`
 const Login = props => {
   const [showPassword, setShowPassword] = useState(false)
   const [stateData, setStateData] = useState({
-    email: 'admin@gmail.com',
-    password: '123123',
+    email: '',
+    password: '',
+    // email: 'admin@gmail.com',
+    // password: '123123',
     emailError: null,
     passwordError: null,
     error: null,
@@ -138,10 +140,10 @@ const Login = props => {
           backgroundPosition: 'center',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
-          // height: '100%'
+          justifyContent: 'center',
+          height: '100vh'
         }}>
-        <Grid
+        {/* <Grid
           item
           lg={5}
           pt={5}
@@ -158,7 +160,7 @@ const Login = props => {
             alt="login img"
             style={{ height: '50%', width: '70%' }}
           />
-        </Grid>
+        </Grid> */}
         <Grid
           item
           lg={7}

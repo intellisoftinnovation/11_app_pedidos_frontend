@@ -88,7 +88,7 @@ const App = () => {
             // Customize notification here
             // const { title, body } = payload.notification
             // eslint-disable-next-line no-restricted-globals
-            var notificationTitle = 'New Order on Enatega Multivendor'
+            var notificationTitle = 'New Order on Dino\'s pedidos'
             var notificationOptions = {
               body: payload.data.orderid,
               icon: 'https://multivendor-admin.ninjascode.com/favicon.png'
