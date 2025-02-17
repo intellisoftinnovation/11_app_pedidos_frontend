@@ -59,7 +59,7 @@ const Configuration = props => {
             ml={-2}>
             <ConfigIcon />
           </Grid>
-          <Grid item sx={12} md={12} lg={5}>
+          {/* <Grid item sx={12} md={12} lg={5}>
             <StripeConfiguration
               publishableKey={data && data.configuration.publishableKey}
               secretKey={data && data.configuration.secretKey}
@@ -71,7 +71,7 @@ const Configuration = props => {
               clientSecret={data && data.configuration.clientSecret}
               sandbox={data && data.configuration.sandbox}
             />
-          </Grid>
+          </Grid> */}
           <Grid item sx={12} md={12} lg={5}>
             <CurrencyConfiguration
               currencyCode={data && data.configuration.currency}
