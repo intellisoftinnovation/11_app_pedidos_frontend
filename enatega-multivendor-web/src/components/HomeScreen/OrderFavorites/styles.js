@@ -38,7 +38,7 @@ const useStyle = makeStyles((theme) => ({
     },
     phoneImg:
     {
-        width: "520px",
+        width: "620px",
         height: "500px",
 
         [theme.breakpoints.down("sm")]: {
