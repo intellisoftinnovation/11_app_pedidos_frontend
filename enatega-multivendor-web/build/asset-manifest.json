@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.3f893846.chunk.css",
-    "main.js": "/static/js/main.7032ed42.chunk.js",
-    "main.js.map": "/static/js/main.7032ed42.chunk.js.map",
+    "main.js": "/static/js/main.7ffaf231.chunk.js",
+    "main.js.map": "/static/js/main.7ffaf231.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b6282ab8.js",
     "runtime-main.js.map": "/static/js/runtime-main.b6282ab8.js.map",
     "static/css/2.06db0635.chunk.css": "/static/css/2.06db0635.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/CheckIcon.0f7c350f.svg": "/static/media/CheckIcon.0f7c350f.svg",
     "static/media/CheckMark.0caf4da4.png": "/static/media/CheckMark.0caf4da4.png",
     "static/media/CustomerIcon.524296d9.svg": "/static/media/CustomerIcon.524296d9.svg",
-    "static/media/Dino app.b84fbe02.png": "/static/media/Dino app.b84fbe02.png",
+    "static/media/Dino app.662c952b.png": "/static/media/Dino app.662c952b.png",
     "static/media/EmailSend.911fa4a2.svg": "/static/media/EmailSend.911fa4a2.svg",
     "static/media/Logo-dinos.6121236c.png": "/static/media/Logo-dinos.6121236c.png",
     "static/media/Platforma Dino 1.951dfbc4.svg": "/static/media/Platforma Dino 1.951dfbc4.svg",
@@ -64,6 +64,6 @@
     "static/css/2.06db0635.chunk.css",
     "static/js/2.86af6c8c.chunk.js",
     "static/css/main.3f893846.chunk.css",
-    "static/js/main.7032ed42.chunk.js"
+    "static/js/main.7ffaf231.chunk.js"
   ]
 }
