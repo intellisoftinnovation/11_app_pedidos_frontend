@@ -7,8 +7,12 @@ const ConfigurableValues = () => {
   // const SERVER_URL = 'https://backend-api-holy-feather-6116.fly.dev'
   // const WS_SERVER_URL = 'wss://backend-api-holy-feather-6116.fly.dev'
 
-  const SERVER_URL = 'https://gql.tester-pruebas.com'
-  const WS_SERVER_URL = 'wss://gql.tester-pruebas.com'
+  // const SERVER_URL = 'https://gql.tester-pruebas.com'
+  // const WS_SERVER_URL = 'wss://gql.tester-pruebas.com'
+
+  const SERVER_URL = 'https://api.dinospedidos.com'
+  const WS_SERVER_URL = 'wss://api.dinospedidos.com'
+  
 
   
   // const SERVER_URL = 'http://192.168.0.101:8001'

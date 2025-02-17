@@ -66,8 +66,8 @@ const useEnvVars = (env = Updates.channel) => {
     // SERVER_URL: 'https://gql.tester-pruebas.com/',
 
     GRAPHQL_URL: 'https://api.dinospedidos.com/graphql',
-      WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
-      SERVER_URL: 'https://api.dinospedidos.com/',
+    WS_GRAPHQL_URL: 'ws://api.dinospedidos.com/graphql',
+    SERVER_URL: 'https://api.dinospedidos.com/',
 
     // GRAPHQL_URL: 'http://192.168.43.124:2002/graphql',
     // WS_GRAPHQL_URL: 'ws://192.168.43.124:2002/graphql',
