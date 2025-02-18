@@ -18,14 +18,14 @@ export const initialize = (
   MEASUREMENT_ID
 ) => {
   const firebaseConfig = {
-    apiKey: 'AIzaSyCHrV6bF7YPbDjmU5bSd7umSuJen71uUgI',
-    authDomain: 'enatega-multivendor.firebaseapp.com',
-    projectId: 'enatega-multivendor',
-    storageBucket: 'enatega-multivendor.appspot.com',
-    messagingSenderId: '650001300965',
-    appId: '1:650001300965:web:68c10de22ea273b76bc30c',
-    measurementId: 'G-C229R9TNPS'
-  }
+    apiKey: "AIzaSyBF95ZzAUILGpzhr2TSgn-NXwK0YQOSIew",
+    authDomain: "dinospedidos.firebaseapp.com",
+    projectId: "dinospedidos",
+    storageBucket: "dinospedidos.firebasestorage.app",
+    messagingSenderId: "573243150729",
+    appId: "1:573243150729:web:12624225775e0e18545158",
+    measurementId: "G-3008QNHZ4D"
+  };
 
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig)

@@ -21,7 +21,7 @@ i18n.use(initReactI18next).init({
   },
   lng: localStorage.getItem('enatega-language') || 'es',
   fallbackLng: 'es',
-  debug: true,
+  debug: false,
   interpolation: {
     escapeValue: false // not needed for react!!
   }

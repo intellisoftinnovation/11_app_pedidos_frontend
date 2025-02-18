@@ -161,7 +161,10 @@ const VendorProfile = () => {
       upload_preset: CLOUDINARY_FOOD
     }
     try {
+      console.log(`Uploading ${uploadType.name} to ${apiUrl} , with preset ${CLOUDINARY_FOOD}`)
       const result = await fetch(apiUrl, {
+      // const result = await fetch('https://api.cloudinary.com/v1_1/dtwzk3rp9/image/upload', {
+        
         body: JSON.stringify(data),
         headers: {
           'content-type': 'application/json'
@@ -171,6 +174,7 @@ const VendorProfile = () => {
       const imageData = await result.json()
       return imageData.secure_url
     } catch (e) {
+      alert(e)
       console.log(e)
     }
   }

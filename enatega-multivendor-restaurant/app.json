@@ -34,16 +34,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "owner": "babyyoda62406",
+    "owner": "andrefdev",
     "plugins": [
       "expo-localization",
       "expo-secure-store",
       "sentry-expo"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "cc30806c-a445-4505-8440-435707a32eeb"
-      }
-    }
+    ]
   }
 }

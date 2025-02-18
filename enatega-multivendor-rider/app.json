@@ -65,23 +65,6 @@
     "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/9144a7fc-b205-464a-8fb6-64eb66fc8743"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "191fb6f4-9ce8-4bc1-ad4e-cecbb2cc4ecb"
-      }
     }
-  },
-  "hooks": {
-    "postPublish": [
-      {
-        "file": "sentry-expo/upload-sourcemaps",
-        "config": {
-          "organization": "ninjas-code",
-          "project": "enatega-multivendor-app",
-          "authToken": "744ed798e04a40a896b0269c25f945de0e166db8362e41969b64d5e07ca80e65"
-        }
-      }
-    ]
   }
 }

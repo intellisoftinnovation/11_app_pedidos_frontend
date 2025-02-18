@@ -543,7 +543,7 @@ export const es = {
     AddTip: 'Agregar Propina',
     permanentDeleteMessage:
       '¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no puede deshacerse. Al eliminar tu cuenta, se eliminarán permanentemente todos tus datos, incluidos tus pedidos y preferencias. Si continúas, perderás acceso a tu cuenta y sus beneficios.',
-    yesSure: "Sí, estoy seguroe",
+    yesSure: "Sí, estoy seguro",
     noDelete: "No, no la elimines",
     deliveryTime: 'Hora de entrega',
     pickupTime: 'Hora de recogida',
