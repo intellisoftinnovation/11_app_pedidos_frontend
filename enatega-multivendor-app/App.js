@@ -98,6 +98,7 @@ export default function App() {
   useEffect(() => {
     try {
       themeSetter({ type: systemTheme === 'dark' ? 'Dark' : 'Pink' })
+      // themeSetter({ type:'Dark'})
     } catch (error) {
       // Error retrieving data
       console.log('Theme Error : ', error.message)

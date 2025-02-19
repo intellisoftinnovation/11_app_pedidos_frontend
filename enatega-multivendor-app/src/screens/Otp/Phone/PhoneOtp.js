@@ -93,6 +93,10 @@ function PhoneOtp(props) {
               onCodeFilled={(code) => {
                 onCodeFilled(code)
               }}
+              css={{
+                color : currentTheme.newFontcolor,
+                borderColor: currentTheme.newFontcolor
+              }}
             />
             {/* <OTPInputView
               pinCount={6}

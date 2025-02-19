@@ -6,7 +6,7 @@ import Spinner from '../../../components/Spinner/Spinner'
 import TextDefault from '../../../components/Text/TextDefault/TextDefault'
 import { alignment } from '../../../utils/alignment'
 import screenOptions from '../screenOptions'
-import OTPInputView from '@twotalltotems/react-native-otp-input'
+// import OTPInputView from '@twotalltotems/react-native-otp-input'
 import useEmailOtp from './useEmailOtp'
 import { useTranslation } from 'react-i18next'
 import { SimpleLineIcons } from '@expo/vector-icons'
@@ -89,6 +89,12 @@ function EmailOtp(props) {
               onCodeFilled={(code) => {
                 onCodeFilled(code)
               }}
+              css={{
+                color : currentTheme.newFontcolor,
+                borderColor: currentTheme.newFontcolor
+              }
+
+              }
             />
             {/* <OTPInputView
               pinCount={6}

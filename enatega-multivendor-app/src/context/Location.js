@@ -61,15 +61,15 @@ export const LocationProvider = ({ children }) => {
     }
     fetchCountry()
   }, [])
-  console.log(`${GET_CITIES}, {
-    variables: { iso: ${country} || 'US' },
-    skip: !country // Skip the query if country is not provided
-  }`)
+  // console.log(`${GET_CITIES}, {
+  //   variables: { iso: ${country} || 'US' },
+  //   skip: !country // Skip the query if country is not provided
+  // }`)
   const { loading, error, data } = useQuery(GET_CITIES, {
     variables: { iso: country || 'US' },
     skip: !country // Skip the query if country is not provided
   })
-  console.log('cities Data inside context', cities)
+  // console.log('cities Data inside context', cities)
   useEffect(() => {
     if (!loading && !error && data) {
       setCities(data.getCountryByIso.cities || [])

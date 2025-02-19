@@ -6,9 +6,13 @@ export const useTheme = () => {
   const theme = useColorScheme()
   const [defaultTheme, setDefaultTheme] = useState(
     theme === 'dark' ? 'Dark' : 'Pink'
+    // 'Dark'
   )
 
   useEffect(() => {
+    // setDefaultTheme('Dark')
+    // console.log(defaultTheme)
+    // return
     try {
       AsyncStorage.getItem('theme').then((response) => {
         if (!response) {

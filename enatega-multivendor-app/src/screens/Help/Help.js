@@ -59,7 +59,7 @@ const Help = props => {
   const currentTheme = theme[themeContext.ThemeValue]
 
   const openWhatsAppChat = () => {
-    Linking.openURL('whatsapp://send?phone=15408006867')
+    Linking.openURL('whatsapp://send?phone=51967103585')
   }
 
   useFocusEffect(() => {

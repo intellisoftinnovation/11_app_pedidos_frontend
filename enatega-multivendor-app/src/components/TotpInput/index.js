@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
-const TotpInput = ({ code = '', onCodeChanged, onCodeFilled }) => {
+const TotpInput = ({ code = '', onCodeChanged, onCodeFilled, css }) => {
   const [otp, setOtp] = useState(Array(6).fill(''));
   const inputRefs = useRef([]);
 
@@ -40,7 +40,7 @@ const TotpInput = ({ code = '', onCodeChanged, onCodeFilled }) => {
         <TextInput
           key={index}
           ref={el => (inputRefs.current[index] = el)}
-          style={styles.input}
+          style={[styles.input , css] }
           keyboardType="numeric"
           maxLength={1}
           value={digit}
@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     width: 40,
     height: 50,
     borderWidth: 2,
-    borderColor: '#000',
     textAlign: 'center',
     fontSize: 20,
     borderRadius: 5,
