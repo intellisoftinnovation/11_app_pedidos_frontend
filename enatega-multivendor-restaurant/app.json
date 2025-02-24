@@ -39,6 +39,11 @@
       "expo-localization",
       "expo-secure-store",
       "sentry-expo"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fe2d7f5b-203f-4c39-ae8d-928ffa17239b"
+      }
+    }
   }
 }

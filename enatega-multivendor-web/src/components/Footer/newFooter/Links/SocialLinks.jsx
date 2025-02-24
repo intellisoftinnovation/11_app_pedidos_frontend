@@ -2,10 +2,11 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import MusicNoteRoundedIcon from '@mui/icons-material/MusicNoteRounded';
+// import XIcon from "@mui/icons-material/X";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -14,10 +15,11 @@ const SocialLinks = () => {
   let { t } = useTranslation();
   let socialLinks = [
     { name: "facebook", icon: FacebookIcon, url: "/" },
-    { name: "X", icon: XIcon, url: "/" },
-    { name: "linkedin", icon: LinkedInIcon, url: "/" },
-    { name: "Instagram", icon: InstagramIcon, url: "/" },
-    { name: "Youtube", icon: YouTubeIcon, url: "/" },
+    { name: "tiktok", icon: MusicNoteRoundedIcon, url: "/" },
+    // { name: "X", icon: XIcon, url: "https://www.facebook.com/share/18T8EBs8Mb/" },
+    // { name: "linkedin", icon: LinkedInIcon, url: "/" },
+    // { name: "Instagram", icon: InstagramIcon, url: "/" },
+    // { name: "Youtube", icon: YouTubeIcon, url: "/" },
   ];
   return (
     <Box
