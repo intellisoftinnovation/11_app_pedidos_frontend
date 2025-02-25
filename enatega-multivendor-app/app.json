@@ -56,7 +56,7 @@
       "androidCollapsedTitle": "Dino's Pedidos"
     },
     "android": {
-      "versionCode": 63,
+      "versionCode": 64,
       "package": "com.dinospedidos.org",
       "googleServicesFile": "./google-services.json",
       "userInterfaceStyle": "automatic",

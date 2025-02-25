@@ -156,7 +156,7 @@ const CreateAccount = (props) => {
             </TextDefault>
           </View>
 
-          <View style={{ marginBottom: scale(5) }}>{renderGoogleAction()}</View>
+          {/* <View style={{ marginBottom: scale(5) }}>{renderGoogleAction()}</View> */}
           {enableApple && (
             <View style={{ marginBottom: scale(5) }}>
               {renderAppleAction()}
