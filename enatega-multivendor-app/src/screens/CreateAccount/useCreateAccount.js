@@ -46,7 +46,7 @@ export const useCreateAccount = () => {
       iosClientId:
         '967541328677-nf8h4ou7rhmq9fahs87p057rggo95eah.apps.googleusercontent.com',
       androidClientId:
-        '573243150729-fq6nfqprb9ldbr482gu902n571vj4b71.apps.googleusercontent.com'
+        '254287793280-377ph5ep18cft95cfu5nn73n3sjob3vv.apps.googleusercontent.com'
     })
   }
   // console.log(ANDROID_CLIENT_ID_GOOGLE)

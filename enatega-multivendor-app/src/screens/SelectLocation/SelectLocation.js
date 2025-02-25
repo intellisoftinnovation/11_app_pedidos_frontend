@@ -25,8 +25,8 @@ import { useTranslation } from 'react-i18next'
 import ModalDropdown from '../../components/Picker/ModalDropdown'
 import Spinner from '../../components/Spinner/Spinner'
 
-const LATITUDE = 33.699265
-const LONGITUDE = 72.974575
+const LATITUDE = -9.1900
+const LONGITUDE =  -75.0152
 const LATITUDE_DELTA = 40
 const LONGITUDE_DELTA = 40
 

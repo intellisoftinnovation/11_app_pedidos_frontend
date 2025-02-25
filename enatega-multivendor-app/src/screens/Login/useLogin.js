@@ -27,7 +27,7 @@ export const useLogin = () => {
 
   const navigation = useNavigation()
   const emailRef = useRef('')
-  const [password, setPassword] = useState('123123')
+  const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(true)
   const [emailError, setEmailError] = useState(null)
   const [passwordError, setPasswordError] = useState(null)

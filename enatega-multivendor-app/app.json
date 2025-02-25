@@ -56,13 +56,13 @@
       "androidCollapsedTitle": "Dino's Pedidos"
     },
     "android": {
-      "versionCode": 60,
+      "versionCode": 63,
       "package": "com.dinospedidos.org",
       "googleServicesFile": "./google-services.json",
       "userInterfaceStyle": "automatic",
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyAPD5LljFecVAsUtj3ApPwRUOMGOrf26No"
+          "apiKey": "AIzaSyCIuYXRI8yAx9Wxyz7naQU0X2sUKupNXk8"
         }
       },
       "permissions": [
