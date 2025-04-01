@@ -13,10 +13,10 @@ const PROFILE = gql`
   ${profile}
 `
 
-const PRODUCT_URL = 'https://enatega.com/enatega-multi-vendor/'
-const PRIVACY_URL = 'https://enatega.com/privacy-policy/'
+const PRODUCT_URL = 'https://dinospedidos.com/'
+const PRIVACY_URL = 'https://dinospedidos.com/#/privacy'
 
-const ABOUT_URL = 'https://ninjascode.com/'
+// const ABOUT_URL = 'https://dinospedidos.com/'
 
 // constants
 /* const datas = [
@@ -49,12 +49,12 @@ const useSidebar = () => {
       title: t('privacyPolicy'),
       icon: 'lock',
       navigateTo: PRIVACY_URL
-    },
-    {
-      title: t('aboutUs'),
-      icon: 'info-circle',
-      navigateTo: ABOUT_URL
     }
+    // {
+    //   title: t('aboutUs'),
+    //   icon: 'info-circle',
+    //   navigateTo: ABOUT_URL
+    // }
   ]
   const { logout } = useContext(AuthContext)
   const { dataProfile } = useContext(UserContext)
