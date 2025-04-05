@@ -12,12 +12,15 @@ const ConfigurableValues = () => {
 
   const SERVER_URL = 'https://api.dinospedidos.com'
   const WS_SERVER_URL = 'wss://api.dinospedidos.com'
+  // 
+  // const SERVER_URL = 'http://localhost:2002'
+  // const WS_SERVER_URL = 'ws://localhost:2002'
   
 
   
   // const SERVER_URL = 'http://192.168.0.101:8001'
   // const WS_SERVER_URL = 'ws://192.168.0.101:8001'
-  const GOOGLE_MAPS_KEY = 'AIzaSyBHl1Q60bjHjEJzNlMBNCuLdc0MYlZoQXs'
+  const GOOGLE_MAPS_KEY = 'AIzaSyCIuYXRI8yAx9Wxyz7naQU0X2sUKupNXk8'
   const FIREBASE_KEY = configuration.firebaseKey
   const APP_ID = configuration.appId
   const AUTH_DOMAIN = configuration.authDomain

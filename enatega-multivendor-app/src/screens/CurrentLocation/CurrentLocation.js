@@ -36,12 +36,12 @@ export default function CurrentLocation() {
     StatusBar.setBarStyle( 'dark-content')
   })
   const initialRegion = {
-    latitude: 31.0461,
-    longitude: 34.8516,
+    latitude: -9.1900 ,
+    longitude: -75.0152,
     latitudeDelta: 1,
     longitudeDelta: 1
   }
-  const markerCoordinate = { latitude: 31.0461, longitude: 34.8516 }
+  const markerCoordinate = { latitude: -9.1900 , longitude: -75.0152 }
 
   const setCurrentLocation = async() => {
     setLoading(true)

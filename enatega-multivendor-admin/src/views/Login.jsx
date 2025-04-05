@@ -271,7 +271,7 @@ const Login = props => {
                       label={t('RememberMe')}
                     />
                   </FormGroup>
-                  <Link
+                  {/* <Link
                     href="/#/auth/reset"
                     sx={{
                       textDecoration: 'none',
@@ -279,7 +279,7 @@ const Login = props => {
                       fontWeight: 'bold'
                     }}>
                     {t('ForgotYourPassword')}
-                  </Link>
+                  </Link> */}
                 </Box>
                 <Box>
                   <Button

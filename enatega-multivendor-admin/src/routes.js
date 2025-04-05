@@ -8,7 +8,7 @@ import DemoConfiguration from './views/Configuration1' //comment this for paid v
 import Users from './views/Users'
 import Vendors from './views/Vendors'
 import RestaurantList from './views/RestaurantList'
-import ResetPassword from './views/ForgotPassword'
+// import ResetPassword from './views/ForgotPassword'
 import Riders from './views/Riders'
 import Options from './views/Options'
 import Addons from './views/Addons'
@@ -319,14 +319,14 @@ var routes = [
     layout: '/auth',
     appearInSidebar: false
   },
-  {
-    path: '/reset',
-    name: 'ResetPassword',
-    icon: 'ni ni-key-25 text-info',
-    component: ResetPassword,
-    layout: '/auth',
-    appearInSidebar: false
-  },
+  // {
+  //   path: '/reset',
+  //   name: 'ResetPassword',
+  //   icon: 'ni ni-key-25 text-info',
+  //   component: ResetPassword,
+  //   layout: '/auth',
+  //   appearInSidebar: false
+  // },
   {
     path: '/dispatch/:id',
     name: 'Dispatch',
