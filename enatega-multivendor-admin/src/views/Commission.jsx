@@ -17,30 +17,37 @@ const GET_RESTAURANTS = gql`
 const UPDATE_COMMISSION = gql`
   ${updateCommission}
 `
+
 const Commission = () => {
   const getValues = id => {
-    const commissionRate = document.getElementById(id).value
+    const inputElement = document.getElementById(id);
+    if (!inputElement) {
+      console.error(`Input element with id ${id} not found`);
+      return { id, commissionRate: 0 }; // Devolvemos 0 si no se encuentra el input
+    }
+    const commissionRate = inputElement.value;
     return { id, commissionRate: +commissionRate }
   }
+
   const [mutate, { error }] = useMutation(UPDATE_COMMISSION)
 
-  const { data, error: errorQuery, loading: loadingQuery } = useQuery(
-    GET_RESTAURANTS
-  )
-  console.log(data)
+  const { data, error: errorQuery, loading: loadingQuery } = useQuery(GET_RESTAURANTS)
+  console.log('data:', data); // Verifica los datos devueltos
+  console.log('errorQuery:', errorQuery); // Verifica el estado del error
+
   const globalClasses = useGlobalStyles()
   const classes = useStyles()
   const { t } = useTranslation()
+
   const handleSuccessButtonClick = () => {
     NotificationManager.success(
       t('UpdateSuccessful'),
       t('CommissionRates'),
       3000,
-      {
-        className: 'customNotification'
-      }
+      { className: 'customNotification' }
     )
   }
+
   const handleErrorButtonClick = () => {
     NotificationManager.error(t('Update Error'), t('Commission Rates'), 3000, {
       className: 'customNotification'
@@ -50,15 +57,13 @@ const Commission = () => {
   const handleSaveButtonClick = id => {
     const result = getValues(id)
 
-    // Validate commissionRate to ensure it's not negative
+    // Validar commissionRate para asegurarse de que no sea negativo
     if (result.commissionRate < 0) {
       NotificationManager.error(
         t('The value Should not be in the negative'),
         t('Commission Rates'),
         3000,
-        {
-          className: 'customNotification'
-        }
+        { className: 'customNotification' }
       )
       return
     }
@@ -84,11 +89,11 @@ const Commission = () => {
                 </Typography>
               </Box>
               <Box className={classes.form}>
-                {errorQuery ? <span>error {errorQuery.message}</span> : null}
+                {/* {errorQuery ? <span>Error: {errorQuery.message}</span> : null} */}
                 {loadingQuery ? (
                   <CustomLoader />
                 ) : (
-                  data && (
+                  data && data.restaurants ? (
                     <>
                       {data.restaurants.map(restaurant => (
                         <Grid key={restaurant._id} container spacing={1}>
@@ -113,29 +118,24 @@ const Commission = () => {
                               onClick={() => handleSaveButtonClick(restaurant._id)}>
                               {t('Save')}
                             </Button>
-                            {error && <span>{error.message}</span>}
                           </Grid>
                         </Grid>
                       ))}
-                      <Box mt={2}>{error && handleErrorButtonClick()}</Box>
                     </>
+                  ) : (
+                    <span>{t('NoRestaurantsFound')}</span>
                   )
                 )}
               </Box>
             </Box>
           </Container>
         </Grid>
-        <Grid
-          item
-          lg={4}
-          sx={{ display: { xs: 'none', lg: 'block' } }}
-          mt={5}
-          ml={-3}
-          order={{ xs: 1, lg: 2 }}>
+        <Grid item lg={4} sx={{ display: { xs: 'none', lg: 'block' } }} mt={5} ml={-3} order={{ xs: 1, lg: 2 }}>
           <CommissionIcon />
         </Grid>
       </Grid>
     </>
   )
 }
+
 export default withTranslation()(Commission)

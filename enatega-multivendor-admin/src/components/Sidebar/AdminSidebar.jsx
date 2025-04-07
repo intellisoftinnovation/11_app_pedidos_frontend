@@ -13,7 +13,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import routes from '../../routes'
 import useStyles from './styles'
-import { ReactComponent as Logo } from '../../assets/svg/Logo-dinos.svg'
+import Logo  from '../../assets/svg/Logo-dinos.svg'
 import { useLocation } from 'react-router-dom'
 import { useTranslation, withTranslation } from 'react-i18next'
 
@@ -34,7 +34,15 @@ function AdminSidebar(props) {
     // <Box className={classes.sidebarContainer}>
     <Box className={classes.sidebarBox}>
       <Toolbar className={[classes.rowDisplay, classes.logo]}>
-        <Logo fontSize="small" />
+        <img src={Logo} alt="Logo"
+          style={
+            {
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              marginLeft: '-10px'
+            }
+          } />  
       </Toolbar>
       <Box className={classes.sidebarList}>
         {routes.map((prop, key) => {
@@ -55,7 +63,7 @@ function AdminSidebar(props) {
                   classes.rowDisplay,
                   classes.sidebarLink,
                   location.pathname === `${prop.layout}${prop.path}` &&
-                    classes.active
+                  classes.active
                 ]}
                 href={'#' + prop.layout + prop.path}
                 underline="none">
