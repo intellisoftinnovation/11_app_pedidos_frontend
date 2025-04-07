@@ -1,4 +1,4 @@
-package com.dinospedidos.rider
+package com.dinospedidos.rider2
 
 import android.os.Build
 import android.os.Bundle

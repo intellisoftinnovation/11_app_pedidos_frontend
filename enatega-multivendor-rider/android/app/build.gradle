@@ -109,13 +109,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.dinospedidos.rider'
+    namespace 'com.dinospedidos.rider2'
     defaultConfig {
-        applicationId 'com.dinospedidos.rider'
+        applicationId 'com.dinospedidos.rider2'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 40
-        versionName "0.3.1"
+        versionCode 41
+        versionName "0.0.1"
     }
     signingConfigs {
         debug {

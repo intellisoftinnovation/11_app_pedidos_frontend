@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:434671372246:android:82e9c4953bf47ad7970677",
+        "mobilesdk_app_id": "1:434671372246:android:d3d5082f9706a0d9970677",
         "android_client_info": {
-          "package_name": "com.dinospedidos.rider"
+          "package_name": "com.dinospedidos.rider2"
         }
       },
       "oauth_client": [

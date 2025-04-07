@@ -1,5 +1,5 @@
 {
-  "name": "enatega-rider-app",
+  "name": "com.dinospedidos.rider2",
   "version": "5.0.2",
   "scripts": {
     "start": "expo start",
