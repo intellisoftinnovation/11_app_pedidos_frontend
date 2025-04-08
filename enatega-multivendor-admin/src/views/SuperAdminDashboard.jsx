@@ -139,7 +139,7 @@ const SuperAdminDashboard = props => {
                   </Typography>
                   <ButtonBase
                     onClick={() =>
-                      (window.location.href = 'https://enatega.com')
+                      (window.location.href = 'https://dinospedidos.com')
                     }
                     variant="contained"
                     sx={{ width: '30%' }}
