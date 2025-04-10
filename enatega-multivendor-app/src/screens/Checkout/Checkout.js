@@ -223,7 +223,7 @@ function Checkout(props) {
             latDest,
             longDest
           )
-          const amount = Math.ceil(distance) * configuration.deliveryRate
+          const amount = (configuration.costType == 'fixed') ? configuration.deliveryRate : Math.ceil(distance) * configuration.deliveryRate
           isSubscribed &&
             setDeliveryCharges(amount > 0 ? amount : configuration.deliveryRate)
         }
@@ -447,8 +447,10 @@ function Checkout(props) {
       return tax.toFixed(2)
     }
     const delivery = isPickup ? 0 : deliveryCharges
-    const amount = +calculatePrice(delivery, true)
-    const taxAmount = ((amount / 100) * tax).toFixed(2)
+    const amount = +calculatePrice(0, false)
+    // const taxAmount = ((amount / 100) * tax).toFixed(2)
+    const taxAmount = ((amount / 100) * 18).toFixed(2)
+
     return taxAmount
   }
 
@@ -517,6 +519,7 @@ function Checkout(props) {
   }
 
   function checkPaymentMethod(currency) {
+    // console.log('checkPaymentMethod', currency)
     if (paymentMode === 'STRIPE') {
       return stripeCurrencies.find((val) => val.currency === currency)
     }

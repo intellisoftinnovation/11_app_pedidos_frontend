@@ -151,7 +151,7 @@ export const es = {
     emptyFavDesc:
       "Verás todos tus favoritos aquí, para hacer los pedidos aún más rápidos.",
     justLook: 'Solo busca el',
-    taxFee: 'Cargos de Impuestos',
+    taxFee: 'IGV',
     viewCart: 'VER TU CARRITO',
     featured: 'Destacados',
     allRestaurant: 'Todos los Restaurantes',

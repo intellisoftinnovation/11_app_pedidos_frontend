@@ -2,7 +2,7 @@
   "expo": {
     "name": "Dino's Pedidos",
     "scheme": "enategamultivendor",
-    "version": "0.2.1",
+    "version": "0.2.3",
     "description": "Dino's Pedidos es una aplicación de pedidos de comida diseñada para ofrecer una experiencia única en la entrega de alimentos.",
     "slug": "dinos-pedidos",
     "owner": "andrefdev",
@@ -56,7 +56,7 @@
       "androidCollapsedTitle": "Dino's Pedidos"
     },
     "android": {
-      "versionCode": 66,
+      "versionCode": 67,
       "package": "com.dinospedidos.org",
       "googleServicesFile": "./google-services.json",
       "userInterfaceStyle": "automatic",

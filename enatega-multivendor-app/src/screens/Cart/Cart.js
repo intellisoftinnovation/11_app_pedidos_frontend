@@ -12,7 +12,8 @@ import {
   StatusBar,
   Platform,
   Alert,
-  Button} from 'react-native'
+  Button
+} from 'react-native'
 import { useQuery } from '@apollo/client'
 import gql from 'graphql-tag'
 import { AntDesign } from '@expo/vector-icons'
@@ -94,6 +95,10 @@ function Cart(props) {
   const [selectedTip, setSelectedTip] = useState()
   const modalRef = useRef(null)
 
+  // useEffect(() => { 
+  //   console.log('configuration', configuration)
+  // }, [configuration])
+
   useEffect(() => {
     if (tip) {
       setSelectedTip(null)
@@ -116,7 +121,9 @@ function Cart(props) {
             latDest,
             longDest
           )
-          const amount = Math.ceil(distance) * configuration.deliveryRate
+          const amount = (configuration.costType == 'fixed') ? configuration.deliveryRate : Math.ceil(distance) * configuration.deliveryRate
+          console.log('amount', amount)
+          console.log('costType' ,configuration.costType)
           isSubscribed &&
             setDeliveryCharges(amount > 0 ? amount : configuration.deliveryRate)
         }
@@ -197,7 +204,7 @@ function Cart(props) {
         showAvailablityMessage()
       }
     }
-    
+
   }, [data])
 
   const showAvailablityMessage = () => {
@@ -236,6 +243,7 @@ function Cart(props) {
       itemTotal = itemTotal - (coupon.discount / 100) * itemTotal
     }
     const deliveryAmount = delivery > 0 ? deliveryCharges : 0
+    console.log(deliveryAmount)
     return (itemTotal + deliveryAmount).toFixed(2)
   }
 
@@ -479,11 +487,11 @@ function Cart(props) {
                     style={styles().totalOrder}
                     H5
                     bolder
-                    
+
                   >
                     {t('yourOrder')} ({cartLength})
                   </TextDefault>
-                 
+
                   {cart?.map((cartItem, index) => {
                     const food = populateFood(cartItem)
                     if (!food) return null
@@ -498,7 +506,7 @@ function Cart(props) {
                           optionsTitle={food.optionsTitle}
                           itemImage={food.image}
                           itemAddons={food.addons}
-                          cartRestaurant= {cartRestaurant}
+                          cartRestaurant={cartRestaurant}
                           dealPrice={(
                             parseFloat(food.price) * food.quantity
                           ).toFixed(2)}

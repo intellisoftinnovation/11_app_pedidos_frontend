@@ -190,8 +190,8 @@ export const yapleCurrencies = [
   { currency: 'CHF', currencySymbol: 'Fr', type: 'YAPLE' },
   { currency: 'THB', currencySymbol: '฿', type: 'YAPLE' },
   { currency: 'USD', currencySymbol: '$', type: 'YAPLE' },
-  { currency: 'SOL', currencySymbol: 'S/.', type: 'YAPLE' }
-  
+  { currency: 'SOL', currencySymbol: 'S/.', type: 'YAPLE' },
+  { currency: 'PEN', currencySymbol: 'S/.', type: 'YAPLE' }
 ]
 
 export const plinCurrencies = [
@@ -220,5 +220,6 @@ export const plinCurrencies = [
   { currency: 'CHF', currencySymbol: 'Fr', type: 'PLIN' },
   { currency: 'THB', currencySymbol: '฿', type: 'PLIN' },
   { currency: 'USD', currencySymbol: '$', type: 'PLIN' },
-  { currency: 'SOL', currencySymbol: 'S/.', type: 'YAPLE' }
+  { currency: 'SOL', currencySymbol: 'S/.', type: 'PLIN' },
+  { currency: 'PEN', currencySymbol: 'S/.', type: 'PLIN' }
 ]

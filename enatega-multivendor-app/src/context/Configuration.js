@@ -23,7 +23,7 @@ const initialConfig = {
   secretKey: '',
   currency: 'SOl',
   currencySymbol: 'S/.',
-  deliveryRate: 5,
+  deliveryRate: 1,
   twilioAccountSid: '',
   twilioAuthToken: '',
   twilioPhoneNumber: '',
